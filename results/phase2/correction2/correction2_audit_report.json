@@ -1,0 +1,1446 @@
+{
+  "eligible_candidates_count": 27651,
+  "unique_groups_examined": 27651,
+  "search_coverage": {
+    "scope": "Full eligible candidate population (100% of valid conversation groups)",
+    "position_limit": "None (all positions evaluated)",
+    "window_limit": "None (all candidate pairs evaluated via inverted index)",
+    "indexing_method": "Inverted index with token frequency ordering, prefix filtering, and length filtering",
+    "similarity_metric": "Token Jaccard similarity >= 0.85",
+    "semantic_guards": [
+      "Negation polarity distinction preservation",
+      "Error code / numeric code distinction preservation",
+      "Context-aware resolution for generic short replies using ancestor context"
+    ]
+  },
+  "duplicate_detection_metrics": {
+    "total_duplicate_pairs": 520,
+    "exact_duplicate_pairs": 433,
+    "near_duplicate_pairs": 87,
+    "total_clusters": 27393,
+    "multi_member_clusters": 152,
+    "total_duplicate_groups_in_clusters": 410,
+    "deduplication_potential_removed_count": 258,
+    "clusters_restricted_for_eval": 59,
+    "multi_member_clusters_restricted_for_eval": 1
+  },
+  "known_pairs_detection": {
+    "pair_1_2544106_and_779665": {
+      "detected": true,
+      "details": [
+        "2544106",
+        "779665",
+        1.0,
+        "exact"
+      ]
+    },
+    "pair_2_1739407_and_1544644": {
+      "detected": true,
+      "details": [
+        "1544644",
+        "1739407",
+        0.9524,
+        "near"
+      ]
+    }
+  },
+  "sample_multi_member_clusters": [
+    {
+      "cluster_id": "cluster_32067",
+      "canonical_group_id": "32067",
+      "member_group_ids": [
+        "32067",
+        "2920765"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "2920765",
+          "group_2": "32067",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_38326",
+      "canonical_group_id": "38326",
+      "member_group_ids": [
+        "38326",
+        "58291",
+        "1002341",
+        "1302434",
+        "1719032",
+        "1783029",
+        "1900273",
+        "2054096",
+        "2081510",
+        "2495870",
+        "2963362"
+      ],
+      "size": 11,
+      "internal_edges": [
+        {
+          "group_1": "38326",
+          "group_2": "58291",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1002341",
+          "group_2": "38326",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1302434",
+          "group_2": "38326",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1719032",
+          "group_2": "38326",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1783029",
+          "group_2": "38326",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1900273",
+          "group_2": "38326",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2054096",
+          "group_2": "38326",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2081510",
+          "group_2": "38326",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2495870",
+          "group_2": "38326",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2963362",
+          "group_2": "38326",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1002341",
+          "group_2": "58291",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1302434",
+          "group_2": "58291",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1719032",
+          "group_2": "58291",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1783029",
+          "group_2": "58291",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1900273",
+          "group_2": "58291",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2054096",
+          "group_2": "58291",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2081510",
+          "group_2": "58291",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2495870",
+          "group_2": "58291",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2963362",
+          "group_2": "58291",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1002341",
+          "group_2": "1302434",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1002341",
+          "group_2": "1719032",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1002341",
+          "group_2": "1783029",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1002341",
+          "group_2": "1900273",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1002341",
+          "group_2": "2054096",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1002341",
+          "group_2": "2081510",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1002341",
+          "group_2": "2495870",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1002341",
+          "group_2": "2963362",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1302434",
+          "group_2": "1719032",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1302434",
+          "group_2": "1783029",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1302434",
+          "group_2": "1900273",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1302434",
+          "group_2": "2054096",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1302434",
+          "group_2": "2081510",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1302434",
+          "group_2": "2495870",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1302434",
+          "group_2": "2963362",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1719032",
+          "group_2": "1783029",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1719032",
+          "group_2": "1900273",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1719032",
+          "group_2": "2054096",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1719032",
+          "group_2": "2081510",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1719032",
+          "group_2": "2495870",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1719032",
+          "group_2": "2963362",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1783029",
+          "group_2": "1900273",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1783029",
+          "group_2": "2054096",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1783029",
+          "group_2": "2081510",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1783029",
+          "group_2": "2495870",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1783029",
+          "group_2": "2963362",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1900273",
+          "group_2": "2054096",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1900273",
+          "group_2": "2081510",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1900273",
+          "group_2": "2495870",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1900273",
+          "group_2": "2963362",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2054096",
+          "group_2": "2081510",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2054096",
+          "group_2": "2495870",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2054096",
+          "group_2": "2963362",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2081510",
+          "group_2": "2495870",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2081510",
+          "group_2": "2963362",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2495870",
+          "group_2": "2963362",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_43447",
+      "canonical_group_id": "43447",
+      "member_group_ids": [
+        "43447",
+        "1145860",
+        "1859883"
+      ],
+      "size": 3,
+      "internal_edges": [
+        {
+          "group_1": "1145860",
+          "group_2": "43447",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1859883",
+          "group_2": "43447",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1145860",
+          "group_2": "1859883",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_44431",
+      "canonical_group_id": "44431",
+      "member_group_ids": [
+        "44431",
+        "461479",
+        "564493",
+        "573781",
+        "893403",
+        "895159",
+        "1310302",
+        "1359013",
+        "2080862",
+        "2224101",
+        "2704343",
+        "2762191"
+      ],
+      "size": 12,
+      "internal_edges": [
+        {
+          "group_1": "44431",
+          "group_2": "461479",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "44431",
+          "group_2": "564493",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "44431",
+          "group_2": "893403",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "44431",
+          "group_2": "895159",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "1310302",
+          "group_2": "44431",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2080862",
+          "group_2": "44431",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2704343",
+          "group_2": "44431",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "461479",
+          "group_2": "564493",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "461479",
+          "group_2": "893403",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "461479",
+          "group_2": "895159",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1310302",
+          "group_2": "461479",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1359013",
+          "group_2": "461479",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2080862",
+          "group_2": "461479",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2224101",
+          "group_2": "461479",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2704343",
+          "group_2": "461479",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "564493",
+          "group_2": "893403",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "564493",
+          "group_2": "895159",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1310302",
+          "group_2": "564493",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1359013",
+          "group_2": "564493",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2080862",
+          "group_2": "564493",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2224101",
+          "group_2": "564493",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2704343",
+          "group_2": "564493",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1359013",
+          "group_2": "573781",
+          "similarity": 0.875
+        },
+        {
+          "group_1": "2762191",
+          "group_2": "573781",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "893403",
+          "group_2": "895159",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1310302",
+          "group_2": "893403",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1359013",
+          "group_2": "893403",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2080862",
+          "group_2": "893403",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2224101",
+          "group_2": "893403",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2704343",
+          "group_2": "893403",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1310302",
+          "group_2": "895159",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1359013",
+          "group_2": "895159",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2080862",
+          "group_2": "895159",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2224101",
+          "group_2": "895159",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2704343",
+          "group_2": "895159",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1310302",
+          "group_2": "1359013",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "1310302",
+          "group_2": "2080862",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1310302",
+          "group_2": "2224101",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "1310302",
+          "group_2": "2704343",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1359013",
+          "group_2": "2080862",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "1359013",
+          "group_2": "2704343",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "1359013",
+          "group_2": "2762191",
+          "similarity": 0.875
+        },
+        {
+          "group_1": "2080862",
+          "group_2": "2224101",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2080862",
+          "group_2": "2704343",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2224101",
+          "group_2": "2704343",
+          "similarity": 0.8571
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_50732",
+      "canonical_group_id": "50732",
+      "member_group_ids": [
+        "50732",
+        "654539",
+        "654598"
+      ],
+      "size": 3,
+      "internal_edges": [
+        {
+          "group_1": "50732",
+          "group_2": "654539",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "50732",
+          "group_2": "654598",
+          "similarity": 0.9167
+        },
+        {
+          "group_1": "654539",
+          "group_2": "654598",
+          "similarity": 0.9167
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_54537",
+      "canonical_group_id": "54537",
+      "member_group_ids": [
+        "54537",
+        "1850983"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "1850983",
+          "group_2": "54537",
+          "similarity": 0.9091
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_55258",
+      "canonical_group_id": "55258",
+      "member_group_ids": [
+        "55258",
+        "1768991",
+        "2957836"
+      ],
+      "size": 3,
+      "internal_edges": [
+        {
+          "group_1": "1768991",
+          "group_2": "55258",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "2957836",
+          "group_2": "55258",
+          "similarity": 0.8571
+        },
+        {
+          "group_1": "1768991",
+          "group_2": "2957836",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_79444",
+      "canonical_group_id": "79444",
+      "member_group_ids": [
+        "79444",
+        "299745",
+        "827996",
+        "883636",
+        "1176579",
+        "1336506",
+        "1464490",
+        "2208939",
+        "2874428"
+      ],
+      "size": 9,
+      "internal_edges": [
+        {
+          "group_1": "299745",
+          "group_2": "79444",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "79444",
+          "group_2": "827996",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "79444",
+          "group_2": "883636",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1176579",
+          "group_2": "79444",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1336506",
+          "group_2": "79444",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1464490",
+          "group_2": "79444",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2208939",
+          "group_2": "79444",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2874428",
+          "group_2": "79444",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "299745",
+          "group_2": "827996",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "299745",
+          "group_2": "883636",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1176579",
+          "group_2": "299745",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1336506",
+          "group_2": "299745",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1464490",
+          "group_2": "299745",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2208939",
+          "group_2": "299745",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2874428",
+          "group_2": "299745",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "827996",
+          "group_2": "883636",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1176579",
+          "group_2": "827996",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1336506",
+          "group_2": "827996",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1464490",
+          "group_2": "827996",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2208939",
+          "group_2": "827996",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2874428",
+          "group_2": "827996",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1176579",
+          "group_2": "883636",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1336506",
+          "group_2": "883636",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1464490",
+          "group_2": "883636",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2208939",
+          "group_2": "883636",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2874428",
+          "group_2": "883636",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1176579",
+          "group_2": "1336506",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1176579",
+          "group_2": "1464490",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1176579",
+          "group_2": "2208939",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1176579",
+          "group_2": "2874428",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1336506",
+          "group_2": "1464490",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1336506",
+          "group_2": "2208939",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1336506",
+          "group_2": "2874428",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1464490",
+          "group_2": "2208939",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1464490",
+          "group_2": "2874428",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2208939",
+          "group_2": "2874428",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_128862",
+      "canonical_group_id": "128862",
+      "member_group_ids": [
+        "128862",
+        "666357"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "128862",
+          "group_2": "666357",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_152224",
+      "canonical_group_id": "152224",
+      "member_group_ids": [
+        "152224",
+        "2836368"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "152224",
+          "group_2": "2836368",
+          "similarity": 0.875
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_160543",
+      "canonical_group_id": "160543",
+      "member_group_ids": [
+        "160543",
+        "2368021"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "160543",
+          "group_2": "2368021",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_166629",
+      "canonical_group_id": "166629",
+      "member_group_ids": [
+        "166629",
+        "482513",
+        "2319502",
+        "2899865"
+      ],
+      "size": 4,
+      "internal_edges": [
+        {
+          "group_1": "166629",
+          "group_2": "482513",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "166629",
+          "group_2": "2319502",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "166629",
+          "group_2": "2899865",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2319502",
+          "group_2": "482513",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2899865",
+          "group_2": "482513",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2319502",
+          "group_2": "2899865",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_172466",
+      "canonical_group_id": "172466",
+      "member_group_ids": [
+        "172466",
+        "173643"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "172466",
+          "group_2": "173643",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_184358",
+      "canonical_group_id": "184358",
+      "member_group_ids": [
+        "184358",
+        "2215954",
+        "2279782",
+        "2294862",
+        "2505227",
+        "2598643"
+      ],
+      "size": 6,
+      "internal_edges": [
+        {
+          "group_1": "184358",
+          "group_2": "2294862",
+          "similarity": 0.8889
+        },
+        {
+          "group_1": "184358",
+          "group_2": "2505227",
+          "similarity": 0.8889
+        },
+        {
+          "group_1": "184358",
+          "group_2": "2598643",
+          "similarity": 0.8889
+        },
+        {
+          "group_1": "2215954",
+          "group_2": "2279782",
+          "similarity": 0.8889
+        },
+        {
+          "group_1": "2279782",
+          "group_2": "2294862",
+          "similarity": 0.8889
+        },
+        {
+          "group_1": "2279782",
+          "group_2": "2505227",
+          "similarity": 0.8889
+        },
+        {
+          "group_1": "2279782",
+          "group_2": "2598643",
+          "similarity": 0.8889
+        },
+        {
+          "group_1": "2294862",
+          "group_2": "2505227",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2294862",
+          "group_2": "2598643",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2505227",
+          "group_2": "2598643",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_187814",
+      "canonical_group_id": "187814",
+      "member_group_ids": [
+        "187814",
+        "1760767"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "1760767",
+          "group_2": "187814",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_224126",
+      "canonical_group_id": "224126",
+      "member_group_ids": [
+        "224126",
+        "2671190"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "224126",
+          "group_2": "2671190",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_263532",
+      "canonical_group_id": "263532",
+      "member_group_ids": [
+        "263532",
+        "1239149"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "1239149",
+          "group_2": "263532",
+          "similarity": 0.875
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_318491",
+      "canonical_group_id": "318491",
+      "member_group_ids": [
+        "318491",
+        "1948782"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "1948782",
+          "group_2": "318491",
+          "similarity": 0.8846
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_321834",
+      "canonical_group_id": "321834",
+      "member_group_ids": [
+        "321834",
+        "2289884",
+        "2404078",
+        "2641105"
+      ],
+      "size": 4,
+      "internal_edges": [
+        {
+          "group_1": "2289884",
+          "group_2": "321834",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2404078",
+          "group_2": "321834",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2641105",
+          "group_2": "321834",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2289884",
+          "group_2": "2404078",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2289884",
+          "group_2": "2641105",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2404078",
+          "group_2": "2641105",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_327150",
+      "canonical_group_id": "327150",
+      "member_group_ids": [
+        "327150",
+        "1283276",
+        "1355020",
+        "1652634",
+        "2925044"
+      ],
+      "size": 5,
+      "internal_edges": [
+        {
+          "group_1": "1283276",
+          "group_2": "327150",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1355020",
+          "group_2": "327150",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1652634",
+          "group_2": "327150",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2925044",
+          "group_2": "327150",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1283276",
+          "group_2": "1355020",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1283276",
+          "group_2": "1652634",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1283276",
+          "group_2": "2925044",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1355020",
+          "group_2": "1652634",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1355020",
+          "group_2": "2925044",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1652634",
+          "group_2": "2925044",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_327644",
+      "canonical_group_id": "327644",
+      "member_group_ids": [
+        "327644",
+        "2412702"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "2412702",
+          "group_2": "327644",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_351049",
+      "canonical_group_id": "351049",
+      "member_group_ids": [
+        "351049",
+        "617753",
+        "1238303"
+      ],
+      "size": 3,
+      "internal_edges": [
+        {
+          "group_1": "351049",
+          "group_2": "617753",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1238303",
+          "group_2": "351049",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1238303",
+          "group_2": "617753",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_365740",
+      "canonical_group_id": "365740",
+      "member_group_ids": [
+        "365740",
+        "1759283",
+        "2810805"
+      ],
+      "size": 3,
+      "internal_edges": [
+        {
+          "group_1": "1759283",
+          "group_2": "365740",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "2810805",
+          "group_2": "365740",
+          "similarity": 1.0
+        },
+        {
+          "group_1": "1759283",
+          "group_2": "2810805",
+          "similarity": 1.0
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_393184",
+      "canonical_group_id": "393184",
+      "member_group_ids": [
+        "393184",
+        "2916629"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "2916629",
+          "group_2": "393184",
+          "similarity": 0.8571
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    },
+    {
+      "cluster_id": "cluster_418217",
+      "canonical_group_id": "418217",
+      "member_group_ids": [
+        "418217",
+        "1209247"
+      ],
+      "size": 2,
+      "internal_edges": [
+        {
+          "group_1": "1209247",
+          "group_2": "418217",
+          "similarity": 0.8889
+        }
+      ],
+      "has_duplicates": true,
+      "ineligible_for_eval": false,
+      "restricted_members": [],
+      "restricted_due_to": "none"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environment Variables & Secret API Keys (DO NOT COMMIT)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Testing & Coverage Reports
+.pytest_cache/
+.coverage
+htmlcov/
+.nox/
+.tox/
+
+# Raw Datasets & Heavy Artifacts (>100MB, rejected by GitHub)
+twcs.csv
+twcs.zip
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+
+# Temporary Caches & Debug Logs
+dataset/
+data/raw/
+data/cache/
+results/debug/
+*.log
+
+# IDEs and OS Metadata
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

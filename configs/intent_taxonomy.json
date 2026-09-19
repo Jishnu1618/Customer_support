@@ -1,0 +1,219 @@
+{
+  "taxonomy_version": "1.0_frozen",
+  "status": "FROZEN_BEFORE_EVALUATION",
+  "freeze_date": "2026-09-14",
+  "taxonomy_name": "Spotify Customer Support Intent Taxonomy",
+  "description": "8-intent taxonomy derived empirically from 50 frozen development customer conversations (Phase 2 v2). Frozen prior to inspecting evaluation pool messages.",
+  "intents": [
+    {
+      "intent_id": "content_availability",
+      "name": "Content Availability & Licensing",
+      "description": "Inquiries regarding missing, removed, unavailable, or upcoming songs, albums, artists, or podcasts, including regional catalog licensing differences.",
+      "scope": {
+        "includes": [
+          "Questions asking why a specific song, album, or artist is missing or greyed out",
+          "Inquiries about regional music rights or country-specific catalog restrictions",
+          "Upcoming music or album release dates (e.g., requests to add new albums)",
+          "Questions asking why songs were removed from an existing playlist or album"
+        ],
+        "excludes": [
+          "Technical playback failures where a track exists but won't play audio (technical_support)",
+          "Service availability in an entire country (platform_and_regional)"
+        ]
+      },
+      "typical_examples": [
+        "why AM to PM by Christina Milian is not available on US Spotify?!?",
+        "missing some songs by Children of Bodom. Not available for Spain users?",
+        "why do you guys keep removing songs from certain albums",
+        "put out #reputation on Spotify"
+      ]
+    },
+    {
+      "intent_id": "technical_support",
+      "name": "Technical Support & App Performance",
+      "description": "Inquiries reporting software bugs, playback failures, crashes, audio glitches, sync issues, offline download problems, or app update regressions.",
+      "scope": {
+        "includes": [
+          "Audio playback not working, tracks refusing to play, or GUI freezing",
+          "Bugs or crashes on mobile, desktop, or web players",
+          "Bugs introduced by recent app updates (e.g., timestamp restart issues)",
+          "Desktop player synchronization delays or podcast feed refresh delays",
+          "UI rendering bugs such as cutoff text or misaligned elements"
+        ],
+        "excludes": [
+          "Playback blocked due to concurrent listening on the same Family account (subscription_and_plans)",
+          "Voice control issues specific to third-party smart speakers (platform_and_regional)",
+          "Tracks withheld due to licensing rights (content_availability)"
+        ]
+      },
+      "typical_examples": [
+        "Sort out your Chrome web app I'm trying to get through my working day here #glitchy",
+        "tracks ive downloaded do not respond when I hit play. The GUI presses but no sound.",
+        "Too bad shuffle doesn't work on mobile.",
+        "recent update won't let me switch songs without starting the next at the time stamp from the previous",
+        "podcasts like take so long to show up in my Windows desktop player",
+        "weird bug where the total amount of songs is cutoff",
+        "This message on everything I try to play. Nothing works. FAQs no help at all."
+      ]
+    },
+    {
+      "intent_id": "account_access",
+      "name": "Account Access & Security",
+      "description": "Issues logging in, resetting passwords, recovering accounts after third-party SSO (e.g. Facebook) disconnection, or reporting compromised/hacked accounts.",
+      "scope": {
+        "includes": [
+          "Inability to log in, forgotten passwords, or password reset loops",
+          "Loss of access following Facebook account deletion or disconnection",
+          "Reports of compromised, hacked, or unauthorized access to an account",
+          "Contact form login-wall catch-22 (cannot log in to contact support)"
+        ],
+        "excludes": [
+          "Wanting to permanently delete or close an account (subscription_and_plans)",
+          "Updating account address or billing details (subscription_and_plans or billing_and_payments)"
+        ]
+      },
+      "typical_examples": [
+        "deleted my Facebook account and now cannot access my spotify account. Help.",
+        "hi my premium account has been hacked. How may I proceed from here? Thanks.",
+        "I deleted my Facebook account without realising my Spotify account was connected. Now I can't access my Spotify account",
+        "I am unable to log in. My Facebook account's e-mail address is [EMAIL_REDACTED] I have a Premium. Please help ASAP!",
+        "I cant change my password and if I try to contact you; it makes me sign in, and I dont know my password"
+      ]
+    },
+    {
+      "intent_id": "billing_and_payments",
+      "name": "Billing, Payments & Invoicing",
+      "description": "Disputes or inquiries about charges, recurring payment methods, payment schedules, refund requests, missing premium status despite payment, grace periods, or billing cancellation timing.",
+      "scope": {
+        "includes": [
+          "Unexpected charges, unauthorized charges, or promotional partner disputes (e.g., Hulu student discount)",
+          "Repeated requests to update payment info every month",
+          "Charged for Premium but the account remains on Free tier",
+          "Timing of monthly payment deductions vs paycheck",
+          "Requests for grace periods or payment extensions",
+          "Billing status inquiries upon cancelling a free trial"
+        ],
+        "excludes": [
+          "Upgrades/downgrades between plan tiers like Family or Student (subscription_and_plans)",
+          "Complaints about general subscription pricing or free tier ads (product_feedback)"
+        ]
+      },
+      "typical_examples": [
+        "what's up with me having to update my payment info every month? It's getting annoying.",
+        "went to try out the student discount for Hulu but they charged me even thought I didn't sign up for it",
+        "Takes out their money before mine gets there. Why??",
+        "hey I am getting charged for a premium account and I'm not getting the services of a premium account and it says I'm still on free?",
+        "can you grant me a grace period for my premium account??? i have a urgent matter",
+        "If I cancel the account now, will premium continue to work until the last day, payed for?"
+      ]
+    },
+    {
+      "intent_id": "subscription_and_plans",
+      "name": "Subscription & Plan Management",
+      "description": "Questions regarding Spotify plan types (Family, Student, Duo, Individual), managing Family plan invites and members, account address verification, plan upgrades/downgrades, or account deletion.",
+      "scope": {
+        "includes": [
+          "Issues joining, inviting, or configuring members on a Family plan",
+          "Multiple concurrent playback conflicts between Family plan members",
+          "Account address or country change restrictions for family accounts",
+          "Requests to permanently delete or close a Spotify account",
+          "Family account restoration when membership expires or drops"
+        ],
+        "excludes": [
+          "Inability to log in to an existing account (account_access)",
+          "Direct disputes over a specific monetary charge or receipt (billing_and_payments)"
+        ]
+      },
+      "typical_examples": [
+        "I had a familiar account and know is not working. I tried to got it back but I couldn't",
+        "i wanna delete my account, nobody wants that connected to facebook. give us an option to delete it",
+        "Why does my music keep getting cut off on my office pc when my wife listens to Spotify in the house? We are paying Premium for Family Acct.",
+        "Why the heck I cannot change the address of my account??? Can you give me an straight answer??",
+        "my partner paid for a family account but I'm not receiving the invite! Nothing to do with email. It's not sending it. Help!"
+      ]
+    },
+    {
+      "intent_id": "platform_and_regional",
+      "name": "Platform Compatibility & Regional Availability",
+      "description": "Inquiries regarding Spotify service availability in specific countries/regions, travel/roaming restrictions, or integration with external hardware/operating systems (e.g., Sonos, Apple Watch, Siri, Windows UWP).",
+      "scope": {
+        "includes": [
+          "Inquiries asking when Spotify will launch in a country (e.g., India, Iraq, South Africa)",
+          "Restrictions on listening while traveling abroad (e.g., 14-day travel rule in Dubai)",
+          "Hardware or OS platform integrations (e.g., Apple Watch, Siri, Sonos voice control, Windows UWP)",
+          "Inquiries asking if a specific device ecosystem is supported"
+        ],
+        "excludes": [
+          "Licensing of specific artists/albums in a country where Spotify is already active (content_availability)",
+          "General app bugs or crashes on supported devices (technical_support)"
+        ]
+      },
+      "typical_examples": [
+        "Seems like you can't start Spotify music/playlists with new Sonos voice control. What gives?",
+        "are you going to launch your services in INDIA?",
+        "Why don't you have a UWP app yet? As a Premium member, I think it's the least you can do.",
+        "a lot of Iraqi people want to use Spotify but it's not supported, is there Chance that be supported in Iraq ?",
+        "what's the word on Apple Watch and Siri support? Is Apple preventing this or are you slow to the game?",
+        "when you're coming to india?",
+        "make the app available is south Africa plzzzzzz",
+        "i can't even use my Spotify account in Dubai??? Guess I have to cancel and join Tidal or Apple Music."
+      ]
+    },
+    {
+      "intent_id": "product_feedback",
+      "name": "Product Feedback, Suggestions & UX Complaints",
+      "description": "Feature requests, UI/UX feedback, comments on recommendation algorithms (e.g., Discover Weekly), ad frequency/placement complaints, or general user experience feedback.",
+      "scope": {
+        "includes": [
+          "Suggestions for new app features or filters (e.g., 'most played' filter, airplane mode detection)",
+          "Feedback or complaints regarding playlist recommendations (e.g., memes in Discover Weekly, unwanted recommended songs in playlists)",
+          "Complaints about ad frequency, volume, or placement (e.g., ad playing mid-song on free tier)",
+          "Discontent with free tier feature limitations without seeking technical help",
+          "Public artist display requests or listener count corrections"
+        ],
+        "excludes": [
+          "Actual software defects or reproducible bugs (technical_support)",
+          "Inquiries about specific song licensing or missing catalog (content_availability)"
+        ]
+      },
+      "typical_examples": [
+        "why is my discover weekly playlist full of memes? @Spotify",
+        "will you please make a 'most played' filter option? PLEASEEEE.",
+        "Camila has more listeners per month, please fix this",
+        "Did you guys really just play an ad in the middle of my song? That's new.",
+        "Kind of amazed how after all these years Spotify still doesn't have an option for detecting airplane mode and showing downloaded music only.",
+        "Quit these recommended songs or at least add an option to turn them off.",
+        "forced off of my premium. I don't know if I want to buy it again if the free guys get shit on by greed"
+      ]
+    },
+    {
+      "intent_id": "other_or_ambiguous",
+      "name": "Other, Social Banter & Ambiguous",
+      "description": "Messages that lack actionable support requests, including compliments/praise, casual banter, jokes, vague or uninterpretable complaints requiring external media (images/links), fandom commentary, or spam.",
+      "scope": {
+        "includes": [
+          "Expressions of gratitude or praise without an open issue",
+          "Casual jokes, banter, or meta-questions (e.g., 'what's a DM?')",
+          "Messages consisting solely of links/images with vague captions ('Please explain yourself!!')",
+          "Celebrity fandom spam or hashtags without an actionable user issue",
+          "General solicitation of free perks or giveaways",
+          "Commentary about customer service quality in the abstract"
+        ],
+        "excludes": [
+          "Inquiries with a clear troubleshooting request, even if accompanied by a screenshot (classify by the text request)",
+          "Vague complaints that can be resolved using prior conversation context"
+        ]
+      },
+      "typical_examples": [
+        "Thanks. Try harder plz😉 https://t.co/Kf9KSF50hJ",
+        "you guys are gods. New Galneryus and you added Maximum the Hormone. A thousand thank yous",
+        "When is @user gonna add @user? #firsts #invisibleorbs",
+        "A+ Service, Spotify, for responding to my original tweet, and then again to my retweet. Still no response from other brand",
+        "hey what's a DM 😂?",
+        "OH HELL NO PLEASE FIX THIS ... YALL BETTA DO SOMETHING. STOP SABOTAGING SELENA ON SPOTIFY SMH",
+        "what can i do for you to give me free premium @SpotifyCares",
+        "Please explain yourself!! why is this happening 😢 https://t.co/sLV9qZjs4N"
+      ]
+    }
+  ]
+}

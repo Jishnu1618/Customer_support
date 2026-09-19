@@ -1,0 +1,48 @@
+# Phase 2 — Implementation & Verification Walkthrough
+
+## 1. Overview
+Phase 2 prepared the Spotify historical corpus (`spotify_knowledge.jsonl`), development inputs (`dev_inputs.jsonl`), and held-out evaluation pool (`eval_pool_inputs.jsonl`) from the local SQLite index with strict split isolation, deduplication, language filtering, and review group blacklisting.
+
+---
+
+## 2. Partition Counts & Output Files
+
+| Dataset / File | Path | Records | Description |
+|---|---|---:|---|
+| **Historical Knowledge Corpus** | [`data/processed/spotify_knowledge.jsonl`](file:///e:/Reply_agent/data/processed/spotify_knowledge.jsonl) | 3,000 | Conversation groups with customer inquiry, ancestor context, and historical brand reply |
+| **Development Inputs** | [`data/processed/dev_inputs.jsonl`](file:///e:/Reply_agent/data/processed/dev_inputs.jsonl) | 50 | Model input payloads from 50 separate groups (brand reply excluded) |
+| **Evaluation Pool Inputs** | [`data/processed/eval_pool_inputs.jsonl`](file:///e:/Reply_agent/data/processed/eval_pool_inputs.jsonl) | 1,000 | Held-out evaluation candidates (brand reply excluded; 0 review overlap) |
+| **Split Manifest** | [`data/manifests/split_manifest.jsonl`](file:///e:/Reply_agent/data/manifests/split_manifest.jsonl) | 4,050 | Complete provenance mapping: `example_id`, `group_id`, `target_customer_tweet_id`, `selected_brand_reply_tweet_id`, `partition`, `source_csv_sha256`, `seed=42`, `preprocessing_version="2.0"`, `quality_flags` |
+| **Exclusion Summary** | [`results/phase2/exclusion_summary.json`](file:///e:/Reply_agent/results/phase2/exclusion_summary.json) | — | 1,182 excluded candidates categorized by reason |
+| **Leakage Audit Report** | [`results/phase2/leakage_report.json`](file:///e:/Reply_agent/results/phase2/leakage_report.json) | — | Verification of 0 partition overlap, deduplication clusters, and near-duplicate audit |
+| **Data Summary** | [`results/phase2/data_summary.md`](file:///e:/Reply_agent/results/phase2/data_summary.md) | — | Statistical distributions of partition sizes and quality flags |
+| **Development Preview** | [`results/phase2/dev_preview.md`](file:///e:/Reply_agent/results/phase2/dev_preview.md) | 20 | 20 formatted development examples for human inspection |
+
+---
+
+## 3. Leakage Checks & Verification
+
+1. **Partition Isolation**:
+   - `dev_eval_group_overlap`: 0
+   - `dev_historical_group_overlap`: 0
+   - `eval_historical_group_overlap`: 0
+   - Full conversation tree assigned to exactly one partition.
+2. **Review Group Blacklist**:
+   - 121 previously reviewed groups gathered from all manifests and review sheets.
+   - `review_eval_pool_overlap`: 0 (strictly verified; no review group entered `eval_pool`).
+3. **Exact-Duplicate Deduplication**:
+   - 287 exact duplicate groups removed across 123 inquiry clusters.
+4. **Model Input Isolation**:
+   - In both `dev_inputs.jsonl` and `eval_pool_inputs.jsonl`, `model_input_text` is generated strictly from the ancestor path up to the target customer inquiry; the selected brand reply is never present in inference inputs.
+
+---
+
+## 4. Test Suite Execution & Results
+
+```powershell
+.venv\Scripts\python.exe -m pytest tests/ -v --tb=short
+```
+
+**Result: 57 passed, 0 failed in 14.20s**
+- 15 Phase 2 specific tests in [`tests/test_phase2_preparation.py`](file:///e:/Reply_agent/tests/test_phase2_preparation.py)
+- 42 Extraction & regression tests across existing test files

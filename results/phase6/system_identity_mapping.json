@@ -1,0 +1,542 @@
+[
+  {
+    "review_id": "REV-001",
+    "example_id": "SpotifyCares:1776708:1776708:1776706",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-002",
+    "example_id": "SpotifyCares:1776708:1776708:1776706",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-003",
+    "example_id": "SpotifyCares:1776708:1776708:1776706",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-004",
+    "example_id": "SpotifyCares:1209357:1209357:1209356",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-005",
+    "example_id": "SpotifyCares:1209357:1209357:1209356",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-006",
+    "example_id": "SpotifyCares:1209357:1209357:1209356",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-007",
+    "example_id": "SpotifyCares:2139018:2139018:2139017",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-008",
+    "example_id": "SpotifyCares:2139018:2139018:2139017",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-009",
+    "example_id": "SpotifyCares:2139018:2139018:2139017",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-010",
+    "example_id": "SpotifyCares:2039869:2039869:2039868",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-011",
+    "example_id": "SpotifyCares:2039869:2039869:2039868",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-012",
+    "example_id": "SpotifyCares:2039869:2039869:2039868",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-013",
+    "example_id": "SpotifyCares:1993423:1993423:1993422",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-014",
+    "example_id": "SpotifyCares:1993423:1993423:1993422",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-015",
+    "example_id": "SpotifyCares:1993423:1993423:1993422",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-016",
+    "example_id": "SpotifyCares:1816107:1816107:1816105",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-017",
+    "example_id": "SpotifyCares:1816107:1816107:1816105",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-018",
+    "example_id": "SpotifyCares:1816107:1816107:1816105",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-019",
+    "example_id": "SpotifyCares:1681220:1681220:1681219",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-020",
+    "example_id": "SpotifyCares:1681220:1681220:1681219",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-021",
+    "example_id": "SpotifyCares:1681220:1681220:1681219",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-022",
+    "example_id": "SpotifyCares:892442:892441:892439",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-023",
+    "example_id": "SpotifyCares:892442:892441:892439",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-024",
+    "example_id": "SpotifyCares:892442:892441:892439",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-025",
+    "example_id": "SpotifyCares:1614273:1614273:1614271",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-026",
+    "example_id": "SpotifyCares:1614273:1614273:1614271",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-027",
+    "example_id": "SpotifyCares:1614273:1614273:1614271",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-028",
+    "example_id": "SpotifyCares:2877413:2877413:2877411",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-029",
+    "example_id": "SpotifyCares:2877413:2877413:2877411",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-030",
+    "example_id": "SpotifyCares:2877413:2877413:2877411",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-031",
+    "example_id": "SpotifyCares:1269780:1269780:1269779",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-032",
+    "example_id": "SpotifyCares:1269780:1269780:1269779",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-033",
+    "example_id": "SpotifyCares:1269780:1269780:1269779",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-034",
+    "example_id": "SpotifyCares:1238326:1238326:1238324",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-035",
+    "example_id": "SpotifyCares:1238326:1238326:1238324",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-036",
+    "example_id": "SpotifyCares:1238326:1238326:1238324",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-037",
+    "example_id": "SpotifyCares:1662710:1662710:1662709",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-038",
+    "example_id": "SpotifyCares:1662710:1662710:1662709",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-039",
+    "example_id": "SpotifyCares:1662710:1662710:1662709",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-040",
+    "example_id": "SpotifyCares:1974290:1974290:1974289",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-041",
+    "example_id": "SpotifyCares:1974290:1974290:1974289",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-042",
+    "example_id": "SpotifyCares:1974290:1974290:1974289",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-043",
+    "example_id": "SpotifyCares:2028417:2028417:2028416",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-044",
+    "example_id": "SpotifyCares:2028417:2028417:2028416",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-045",
+    "example_id": "SpotifyCares:2028417:2028417:2028416",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-046",
+    "example_id": "SpotifyCares:564524:564524:564522",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-047",
+    "example_id": "SpotifyCares:564524:564524:564522",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-048",
+    "example_id": "SpotifyCares:564524:564524:564522",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-049",
+    "example_id": "SpotifyCares:971889:971889:971888",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-050",
+    "example_id": "SpotifyCares:971889:971889:971888",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-051",
+    "example_id": "SpotifyCares:971889:971889:971888",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-052",
+    "example_id": "SpotifyCares:1898607:1898607:1898606",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-053",
+    "example_id": "SpotifyCares:1898607:1898607:1898606",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-054",
+    "example_id": "SpotifyCares:1898607:1898607:1898606",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-055",
+    "example_id": "SpotifyCares:2863030:2863030:2863029",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-056",
+    "example_id": "SpotifyCares:2863030:2863030:2863029",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-057",
+    "example_id": "SpotifyCares:2863030:2863030:2863029",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-058",
+    "example_id": "SpotifyCares:1990907:1990907:1990906",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-059",
+    "example_id": "SpotifyCares:1990907:1990907:1990906",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-060",
+    "example_id": "SpotifyCares:1990907:1990907:1990906",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-061",
+    "example_id": "SpotifyCares:2959349:2959349:2959347",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-062",
+    "example_id": "SpotifyCares:2959349:2959349:2959347",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-063",
+    "example_id": "SpotifyCares:2959349:2959349:2959347",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-064",
+    "example_id": "SpotifyCares:2144256:2144256:2144254",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-065",
+    "example_id": "SpotifyCares:2144256:2144256:2144254",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-066",
+    "example_id": "SpotifyCares:2144256:2144256:2144254",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-067",
+    "example_id": "SpotifyCares:1101343:1101343:1101342",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-068",
+    "example_id": "SpotifyCares:1101343:1101343:1101342",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-069",
+    "example_id": "SpotifyCares:1101343:1101343:1101342",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-070",
+    "example_id": "SpotifyCares:2717757:2717757:2717755",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-071",
+    "example_id": "SpotifyCares:2717757:2717757:2717755",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-072",
+    "example_id": "SpotifyCares:2717757:2717757:2717755",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-073",
+    "example_id": "SpotifyCares:278120:278120:278119",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-074",
+    "example_id": "SpotifyCares:278120:278120:278119",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-075",
+    "example_id": "SpotifyCares:278120:278120:278119",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-076",
+    "example_id": "SpotifyCares:1533093:1533093:1533092",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-077",
+    "example_id": "SpotifyCares:1533093:1533093:1533092",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-078",
+    "example_id": "SpotifyCares:1533093:1533093:1533092",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-079",
+    "example_id": "SpotifyCares:2597243:2597243:2597240",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-080",
+    "example_id": "SpotifyCares:2597243:2597243:2597240",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-081",
+    "example_id": "SpotifyCares:2597243:2597243:2597240",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-082",
+    "example_id": "SpotifyCares:1964855:1964855:1964854",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-083",
+    "example_id": "SpotifyCares:1964855:1964855:1964854",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-084",
+    "example_id": "SpotifyCares:1964855:1964855:1964854",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-085",
+    "example_id": "SpotifyCares:1872388:1872388:1872387",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-086",
+    "example_id": "SpotifyCares:1872388:1872388:1872387",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-087",
+    "example_id": "SpotifyCares:1872388:1872388:1872387",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  },
+  {
+    "review_id": "REV-088",
+    "example_id": "SpotifyCares:948048:948048:948047",
+    "blinded_system_id": "System_Alpha",
+    "system_id": "baseline_0_majority"
+  },
+  {
+    "review_id": "REV-089",
+    "example_id": "SpotifyCares:948048:948048:948047",
+    "blinded_system_id": "System_Beta",
+    "system_id": "baseline_1_rules"
+  },
+  {
+    "review_id": "REV-090",
+    "example_id": "SpotifyCares:948048:948048:948047",
+    "blinded_system_id": "System_Gamma",
+    "system_id": "main_agent_v1"
+  }
+]

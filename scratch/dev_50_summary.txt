@@ -1,0 +1,311 @@
+TOTAL DEV RECORDS: 50
+
+--- [1/50] ID: SpotifyCares:857985:857985:857984 | Group: 857985 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): .@[CUSTOMER_HANDLE] do you care to explain why AM to PM by Christina Milian is not available on US Spotify?!?
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [2/50] ID: SpotifyCares:633732:633732:633730 | Group: 633732 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] @[CUSTOMER_HANDLE] @[CUSTOMER_HANDLE] @SpotifyCares Seems like you can't start Spotify music/playlists with new Sonos voice control.  What gives?
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [3/50] ID: SpotifyCares:1975342:1975342:1975341 | Group: 1975342 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): why is my discover weekly playlist full of memes? @[CUSTOMER_HANDLE]
+Turns count: 1
+Input Flags: {"suspected_multipart": true, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [4/50] ID: SpotifyCares:2032680:2032680:2032679 | Group: 2032680 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): Sort out your Chrome web app @[CUSTOMER_HANDLE] I'm trying to get through my working day here 😢 👍 #glitchy
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [5/50] ID: SpotifyCares:1477056:1477056:1477055 | Group: 1477056 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): Thanks. Try harder plz😉 https://t.co/Kf9KSF50hJ
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": true, "private_handoff": false, "external_context_required": false}
+
+--- [6/50] ID: SpotifyCares:262277:262277:262276 | Group: 262277 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): Hey @[CUSTOMER_HANDLE], what's up with me having to update my payment info every month? It's getting annoying.
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [7/50] ID: SpotifyCares:1102158:1102158:1102157 | Group: 1102158 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] will you please make a "most played" filter option? PLEASEEEE.
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [8/50] ID: SpotifyCares:932757:932757:932756 | Group: 932757 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] @[CUSTOMER_HANDLE] are you going to launch your services in INDIA?
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [9/50] ID: SpotifyCares:2279791:2279791:2279790 | Group: 2279791 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares so I went to try out the student discount for Hulu but they charged me even thought I didn’t sign up for it after all what’s going on??
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [10/50] ID: SpotifyCares:2653105:2653105:2653104 | Group: 2653105 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] hi, could you pls help me? I had a familiar account and know is not working. I tried to got it back but I couldn’t
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [11/50] ID: SpotifyCares:1936169:1936169:1936168 | Group: 1936169 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] does it again. Takes out their money before mine gets there. Why??
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [12/50] ID: SpotifyCares:1023907:1023907:1023906 | Group: 1023907 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] Why don't you have a UWP app yet?  As a Premium member, I think it's the least you can do.
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [13/50] ID: SpotifyCares:344187:344187:344186 | Group: 344187 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares you guys are gods. New Galneryus and you added Maximum the Hormone. A thousand thank yous
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [14/50] ID: SpotifyCares:2932352:2932352:2932351 | Group: 2932352 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] missing some songs by Children of Bodom. Not available for Spain users? https://t.co/0j4hITXVQd
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": true, "private_handoff": false, "external_context_required": false}
+
+--- [15/50] ID: SpotifyCares:1865415:1865415:1865414 | Group: 1865415 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares a lot of Iraqi people want to use Spotify but it's not supported, is there Chance that be supported in Iraq ?
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [16/50] ID: SpotifyCares:2190928:2190928:2190927 | Group: 2190928 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): When is @[CUSTOMER_HANDLE] gonna add @[CUSTOMER_HANDLE]? @SpotifyCares #firsts #invisibleorbs
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [17/50] ID: SpotifyCares:2012189:2012189:2012188 | Group: 2012189 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): Camila has more listeners per month, please fix this @[CUSTOMER_HANDLE] @SpotifyCares https://t.co/ScG3I5Z3cG
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": true, "private_handoff": false, "external_context_required": false}
+
+--- [18/50] ID: SpotifyCares:1770729:1770729:1770728 | Group: 1770729 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): A+ Service, Spotify, for responding to my original tweet, and then again to my retweet. Still no response from @[CUSTOMER_HANDLE] https://t.co/qHWLyopb3t
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": true, "private_handoff": false, "external_context_required": false}
+
+--- [19/50] ID: SpotifyCares:746958:746958:746957 | Group: 746958 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] Did you guys really just play an ad in the middle of my song? That's new.
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [20/50] ID: SpotifyCares:1588420:1588420:1588419 | Group: 1588420 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] what’s the word on Apple Watch and Siri support? Is @[CUSTOMER_HANDLE] preventing this  or are you slow to the game?
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [21/50] ID: SpotifyCares:1837746:1837738:1837736 | Group: 1837746 ---
+Model Input Text:
+[Customer_1]: @SpotifyCares I’m having issues where new tracks ive downloaded do not respond when I hit play. The GUI ‘presses’ but no sound. Old stuff ok
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares It’s the new BECK album if that helps!
+Turns count: 2
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [22/50] ID: SpotifyCares:2707737:2707737:2707736 | Group: 2707737 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] if deleted my Facebook account and now cannot access my spotify account. Help.
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [23/50] ID: SpotifyCares:689544:689544:689543 | Group: 689544 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): .@SpotifyCares hi my premium account has been hacked. How may I proceed from here? Thanks.
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [24/50] ID: SpotifyCares:576195:576195:576194 | Group: 576195 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares i wanna delete my account, nobody wants that connected to facebook. give us an option to delete it
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [25/50] ID: SpotifyCares:591479:591479:591478 | Group: 591479 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares hey I am getting charged for a premium account and I’m not getting the services of a premium account and it says I’m still on free?
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [26/50] ID: SpotifyCares:2511299:2511293:2511291 | Group: 2511299 ---
+Model Input Text:
+[Customer_1]: Spotify Premium lets you play your favorite tunes without phone service. Make some moves. https://t.co/pMvOeAc00I
+[Customer_2] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] Too bad shuffle doesn’t work on mobile.
+Turns count: 2
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": true, "private_handoff": false, "external_context_required": false}
+
+--- [27/50] ID: SpotifyCares:2375424:2375424:2375422 | Group: 2375424 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares @[CUSTOMER_HANDLE] when you're coming to india?
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [28/50] ID: SpotifyCares:172468:172468:172467 | Group: 172468 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): Kind of amazed how after all these years @[CUSTOMER_HANDLE] still doesn’t have an option for detecting airplane mode and showing downloaded music only. 😞
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [29/50] ID: SpotifyCares:754546:754546:754545 | Group: 754546 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares hey what’s a DM 😂?
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [30/50] ID: SpotifyCares:1281628:1281627:1281625 | Group: 1281628 ---
+Model Input Text:
+[Customer_1]: OH HELL NO @SpotifyCares @[CUSTOMER_HANDLE] @[CUSTOMER_HANDLE] PLEASE FIX THIS https://t.co/CHfqaFoJmU
+[Customer_2] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] @SpotifyCares @[CUSTOMER_HANDLE] @[CUSTOMER_HANDLE] @SpotifyCares @[CUSTOMER_HANDLE] @[CUSTOMER_HANDLE] YALL BETTA DO SOMETHING. STOP SABOTAGING SELENA ON SPOTIFY SMH
+Turns count: 2
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": true, "private_handoff": false, "external_context_required": false}
+
+--- [31/50] ID: SpotifyCares:2572204:2572204:2572202 | Group: 2572204 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] make the app available is south Africa plzzzzzz
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [32/50] ID: SpotifyCares:2766505:2766505:2766504 | Group: 2766505 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE]
+Why does my music keep getting cut off on my office pc when my wife listens to Spotify in the house🤔
+
+We are paying Premium for Family Acct. 
+
+We have separate sign ins?    Ready to move to Apple if I cannot get a resolution. #
+
+Hope you can help ASAP.
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [33/50] ID: SpotifyCares:1629841:1629841:1629840 | Group: 1629841 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): what can i do for you to give me free premium @SpotifyCares
+Turns count: 1
+Input Flags: {"suspected_multipart": true, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [34/50] ID: SpotifyCares:38322:38322:38321 | Group: 38322 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares can you grant me a grace period for my premium account??? i have a urgent matter
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [35/50] ID: SpotifyCares:2028677:2028677:2028675 | Group: 2028677 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): Please explain yourself!! @[CUSTOMER_HANDLE] why is this happening 😢 https://t.co/sLV9qZjs4N
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": true, "private_handoff": false, "external_context_required": false}
+
+--- [36/50] ID: SpotifyCares:1949728:1949728:1949726 | Group: 1949728 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares So the most recent update to the app won’t let me switch songs without starting the next at the time stamp from the previous
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [37/50] ID: SpotifyCares:2198134:2198134:2198133 | Group: 2198134 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] why do @[CUSTOMER_HANDLE]'s podcsts like @[CUSTOMER_HANDLE] take so long to show up in my Windows desktop player? It's annoying to have to pull out my phone to play it. Is there a refresh button or something I'm missing?
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [38/50] ID: SpotifyCares:2191425:2191425:2191423 | Group: 2191425 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): Hey @[CUSTOMER_HANDLE], I don't mind listening to your Good awful ads for premium but if I wanted to listen to songs not on the playlist I made i would switch back to Pandora. Quit these recommended songs or at least add an option to turn them off.
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [39/50] ID: SpotifyCares:749218:749218:749219 | Group: 749218 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares weird bug where the total amount of songs is cutoff. #YourWelcome https://t.co/Z6po1i6wER
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": true, "private_handoff": false, "external_context_required": false}
+
+--- [40/50] ID: SpotifyCares:2158535:2158535:2158534 | Group: 2158535 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] i can't even use my Spotify account in Dubai??? Guess I have to cancel and join Tidal or Apple Music. It was fun while it lasted... #LostACustomer
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": true, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [41/50] ID: SpotifyCares:1825353:1825353:1825352 | Group: 1825353 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares forced off of my premium. I don’t know if I want to buy it again if the free guys get shit on by greed
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [42/50] ID: SpotifyCares:670016:670016:670015 | Group: 670016 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] - Why the heck I cannot change the address of my account??? Can you give me an straight answer??
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [43/50] ID: SpotifyCares:617481:617481:617480 | Group: 617481 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] I deleted my Facebook account without realising my Spotify account was connected. Now I can't access my Spotify account, How can I change this as it is a premium account.
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [44/50] ID: SpotifyCares:1799988:1799988:1799987 | Group: 1799988 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares I am unable to log in.  My Facebook account's e-mail address is [EMAIL_REDACTED]   I have a Premium.  Please help ASAP!
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [45/50] ID: SpotifyCares:2128551:2128551:2128550 | Group: 2128551 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] why do you guys keep removing  songs from certain albums
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [46/50] ID: SpotifyCares:1574837:1574837:1574836 | Group: 1574837 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares my partner paid for a family account but I'm not receiving the invite! Nothing to do with email. It's not sending it. Help!
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [47/50] ID: SpotifyCares:2704314:2704314:2704312 | Group: 2704314 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares I have an account for my younger sister, she forgot her login details to cancel her trial. After 4 days and numerous attempts we finally got bk in! If I cancel the account now, will premium continue to work until the last day, payed for?
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [48/50] ID: SpotifyCares:794159:794159:794158 | Group: 794159 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @SpotifyCares I cant change my password and if I try to contact you; it makes me sign in, and I dont know my password
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [49/50] ID: SpotifyCares:2707747:2707747:2707746 | Group: 2707747 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): It is almost Thanksgiving in the USA and I would be very thankful if @[CUSTOMER_HANDLE] put out #reputation on @[CUSTOMER_HANDLE] and @[CUSTOMER_HANDLE] 🙂
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": false, "private_handoff": false, "external_context_required": false}
+
+--- [50/50] ID: SpotifyCares:2125277:2125277:2125276 | Group: 2125277 ---
+Model Input Text:
+[Customer_1] (TARGET CUSTOMER INQUIRY): @[CUSTOMER_HANDLE] please help. Premium membership. This message on everything I try to play. Nothing works. FAQs no help at all. Account/passwords etc all in order. Help please https://t.co/BpfwKF4Ryv
+Turns count: 1
+Input Flags: {"suspected_multipart": false, "partial_text": false, "has_url": true, "private_handoff": false, "external_context_required": false}

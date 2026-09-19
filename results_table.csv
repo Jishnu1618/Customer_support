@@ -1,0 +1,4 @@
+system_id,system_name,judge_mode,total_messages,intent_accuracy,escalation_recall,automation_coverage,unsafe_automation_rate,relevance,grounding,usefulness,tone,critical_error_count,reply_quality_note
+baseline_0_majority,Baseline 0,heuristic,200,3.5% (7/200),100.0% (20/20),0.0% (0/200),N/A (0 automated),2.0,1.0,1.0,2.0,0,Scored 200/200 rows (heuristic)
+baseline_1_rules,Baseline 1,heuristic,200,44.0% (88/200),70.0% (14/20),89.0% (178/200),3.4% (6/178),2.0,1.7,1.58,1.63,6,Scored 200/200 rows (heuristic)
+main_agent_v1,Main Agent,heuristic,200,44.5% (89/200),95.0% (19/20),54.5% (109/200),0.9% (1/109),1.78,1.0,1.0,1.33,1,Scored 200/200 rows (heuristic)

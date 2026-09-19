@@ -1,0 +1,108 @@
+{
+  "file_name": "twcs.csv",
+  "file_path": "dataset\\twcs\\twcs.csv",
+  "sha256": "cd297fcfa1bf6f99938be242e8e578980bc6d1b96adc8691abec9a39175b03c0",
+  "total_rows": 2811774,
+  "columns": [
+    "tweet_id",
+    "author_id",
+    "inbound",
+    "created_at",
+    "text",
+    "response_tweet_id",
+    "in_response_to_tweet_id"
+  ],
+  "missing_values_per_column": {
+    "tweet_id": 0,
+    "author_id": 0,
+    "inbound": 0,
+    "created_at": 0,
+    "text": 0,
+    "response_tweet_id": 1040629,
+    "in_response_to_tweet_id": 794335
+  },
+  "inbound_customer_messages": 1537843,
+  "outbound_brand_messages": 1273931,
+  "top_20_outbound_authors": [
+    {
+      "author_id": "AmazonHelp",
+      "tweet_count": 169840
+    },
+    {
+      "author_id": "AppleSupport",
+      "tweet_count": 106860
+    },
+    {
+      "author_id": "Uber_Support",
+      "tweet_count": 56270
+    },
+    {
+      "author_id": "SpotifyCares",
+      "tweet_count": 43265
+    },
+    {
+      "author_id": "Delta",
+      "tweet_count": 42253
+    },
+    {
+      "author_id": "Tesco",
+      "tweet_count": 38573
+    },
+    {
+      "author_id": "AmericanAir",
+      "tweet_count": 36764
+    },
+    {
+      "author_id": "TMobileHelp",
+      "tweet_count": 34317
+    },
+    {
+      "author_id": "comcastcares",
+      "tweet_count": 33031
+    },
+    {
+      "author_id": "British_Airways",
+      "tweet_count": 29361
+    },
+    {
+      "author_id": "SouthwestAir",
+      "tweet_count": 28977
+    },
+    {
+      "author_id": "VirginTrains",
+      "tweet_count": 27817
+    },
+    {
+      "author_id": "Ask_Spectrum",
+      "tweet_count": 25860
+    },
+    {
+      "author_id": "XboxSupport",
+      "tweet_count": 24557
+    },
+    {
+      "author_id": "sprintcare",
+      "tweet_count": 22381
+    },
+    {
+      "author_id": "hulu_support",
+      "tweet_count": 21872
+    },
+    {
+      "author_id": "sainsburys",
+      "tweet_count": 19466
+    },
+    {
+      "author_id": "GWRHelp",
+      "tweet_count": 19364
+    },
+    {
+      "author_id": "AskPlayStation",
+      "tweet_count": 19098
+    },
+    {
+      "author_id": "ChipotleTweets",
+      "tweet_count": 18749
+    }
+  ]
+}

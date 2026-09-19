@@ -1,0 +1,822 @@
+{
+  "sampling_seed": 42,
+  "candidate_brands": [
+    "SpotifyCares",
+    "AppleSupport",
+    "AskPlayStation"
+  ],
+  "target_complete_per_brand": 30,
+  "total_conversations_sampled": 90,
+  "conversations": [
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_001",
+      "root_tweet_id": "2259585",
+      "brand_reply_tweet_id": "2259583",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_002",
+      "root_tweet_id": "2851467",
+      "brand_reply_tweet_id": "2851465",
+      "tweet_count": 7,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_003",
+      "root_tweet_id": "2445363",
+      "brand_reply_tweet_id": "2445362",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_004",
+      "root_tweet_id": "2509480",
+      "brand_reply_tweet_id": "2509479",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_005",
+      "root_tweet_id": "337851",
+      "brand_reply_tweet_id": "337849",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_006",
+      "root_tweet_id": "1132220",
+      "brand_reply_tweet_id": "1132218",
+      "tweet_count": 10,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_007",
+      "root_tweet_id": "2795579",
+      "brand_reply_tweet_id": "2795577",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_008",
+      "root_tweet_id": "2395828",
+      "brand_reply_tweet_id": "2395827",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_009",
+      "root_tweet_id": "2516158",
+      "brand_reply_tweet_id": "2516157",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_010",
+      "root_tweet_id": "2912482",
+      "brand_reply_tweet_id": "2912481",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_011",
+      "root_tweet_id": "113846",
+      "brand_reply_tweet_id": "113845",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_012",
+      "root_tweet_id": "703194",
+      "brand_reply_tweet_id": "703193",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_013",
+      "root_tweet_id": "466068",
+      "brand_reply_tweet_id": "466067",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_014",
+      "root_tweet_id": "1988852",
+      "brand_reply_tweet_id": "1988851",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_015",
+      "root_tweet_id": "1965555",
+      "brand_reply_tweet_id": "1965553",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_016",
+      "root_tweet_id": "1927090",
+      "brand_reply_tweet_id": "1927089",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_017",
+      "root_tweet_id": "1366580",
+      "brand_reply_tweet_id": "1366579",
+      "tweet_count": 7,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_018",
+      "root_tweet_id": "668697",
+      "brand_reply_tweet_id": "668696",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_019",
+      "root_tweet_id": "1833860",
+      "brand_reply_tweet_id": "1833850",
+      "tweet_count": 11,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_020",
+      "root_tweet_id": "1928603",
+      "brand_reply_tweet_id": "1928601",
+      "tweet_count": 3,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_021",
+      "root_tweet_id": "2218776",
+      "brand_reply_tweet_id": "2218774",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_022",
+      "root_tweet_id": "1707319",
+      "brand_reply_tweet_id": "1707318",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_023",
+      "root_tweet_id": "2912474",
+      "brand_reply_tweet_id": "2912473",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_024",
+      "root_tweet_id": "462662",
+      "brand_reply_tweet_id": "462660",
+      "tweet_count": 5,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_025",
+      "root_tweet_id": "2144265",
+      "brand_reply_tweet_id": "2144264",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_026",
+      "root_tweet_id": "431437",
+      "brand_reply_tweet_id": "431436",
+      "tweet_count": 3,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_027",
+      "root_tweet_id": "252906",
+      "brand_reply_tweet_id": "252905",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_028",
+      "root_tweet_id": "1369161",
+      "brand_reply_tweet_id": "1369160",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_029",
+      "root_tweet_id": "2976805",
+      "brand_reply_tweet_id": "2976804",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "SpotifyCares",
+      "conversation_id": "SpotifyCares_CONV_030",
+      "root_tweet_id": "1858773",
+      "brand_reply_tweet_id": "1858770",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_001",
+      "root_tweet_id": "1742542",
+      "brand_reply_tweet_id": "1742540",
+      "tweet_count": 5,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_002",
+      "root_tweet_id": "675435",
+      "brand_reply_tweet_id": "675434",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_003",
+      "root_tweet_id": "2117331",
+      "brand_reply_tweet_id": "2117330",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_004",
+      "root_tweet_id": "2120181",
+      "brand_reply_tweet_id": "2120180",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_005",
+      "root_tweet_id": "2914656",
+      "brand_reply_tweet_id": "2914654",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_006",
+      "root_tweet_id": "2577068",
+      "brand_reply_tweet_id": "2577067",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_007",
+      "root_tweet_id": "2515332",
+      "brand_reply_tweet_id": "2515331",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_008",
+      "root_tweet_id": "878563",
+      "brand_reply_tweet_id": "878562",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_009",
+      "root_tweet_id": "32364",
+      "brand_reply_tweet_id": "32362",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_010",
+      "root_tweet_id": "121561",
+      "brand_reply_tweet_id": "121560",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_011",
+      "root_tweet_id": "1651889",
+      "brand_reply_tweet_id": "1651884",
+      "tweet_count": 6,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_012",
+      "root_tweet_id": "2276913",
+      "brand_reply_tweet_id": "2276911",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_013",
+      "root_tweet_id": "324505",
+      "brand_reply_tweet_id": "324503",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_014",
+      "root_tweet_id": "1636590",
+      "brand_reply_tweet_id": "1636589",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_015",
+      "root_tweet_id": "1955631",
+      "brand_reply_tweet_id": "1955630",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_016",
+      "root_tweet_id": "582789",
+      "brand_reply_tweet_id": "582788",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_017",
+      "root_tweet_id": "2137262",
+      "brand_reply_tweet_id": "2137259",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_018",
+      "root_tweet_id": "566725",
+      "brand_reply_tweet_id": "566722",
+      "tweet_count": 11,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_019",
+      "root_tweet_id": "2889474",
+      "brand_reply_tweet_id": "2889472",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_020",
+      "root_tweet_id": "2355895",
+      "brand_reply_tweet_id": "2355894",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_021",
+      "root_tweet_id": "1015754",
+      "brand_reply_tweet_id": "1015752",
+      "tweet_count": 6,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_022",
+      "root_tweet_id": "505201",
+      "brand_reply_tweet_id": "505199",
+      "tweet_count": 5,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_023",
+      "root_tweet_id": "2277310",
+      "brand_reply_tweet_id": "2277309",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_024",
+      "root_tweet_id": "902775",
+      "brand_reply_tweet_id": "902773",
+      "tweet_count": 3,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_025",
+      "root_tweet_id": "2040927",
+      "brand_reply_tweet_id": "2040926",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_026",
+      "root_tweet_id": "1814054",
+      "brand_reply_tweet_id": "1814053",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_027",
+      "root_tweet_id": "1401362",
+      "brand_reply_tweet_id": "1401361",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_028",
+      "root_tweet_id": "1053630",
+      "brand_reply_tweet_id": "1053626",
+      "tweet_count": 5,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_029",
+      "root_tweet_id": "1352916",
+      "brand_reply_tweet_id": "1352915",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AppleSupport",
+      "conversation_id": "AppleSupport_CONV_030",
+      "root_tweet_id": "1909405",
+      "brand_reply_tweet_id": "1909403",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_001",
+      "root_tweet_id": "694677",
+      "brand_reply_tweet_id": "694676",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_002",
+      "root_tweet_id": "274174",
+      "brand_reply_tweet_id": "274173",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_003",
+      "root_tweet_id": "2156717",
+      "brand_reply_tweet_id": "2156716",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_004",
+      "root_tweet_id": "2620248",
+      "brand_reply_tweet_id": "2620246",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_005",
+      "root_tweet_id": "1785852",
+      "brand_reply_tweet_id": "1785851",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_006",
+      "root_tweet_id": "2929909",
+      "brand_reply_tweet_id": "2929908",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_007",
+      "root_tweet_id": "2704633",
+      "brand_reply_tweet_id": "2704630",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_008",
+      "root_tweet_id": "433392",
+      "brand_reply_tweet_id": "433391",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_009",
+      "root_tweet_id": "1102329",
+      "brand_reply_tweet_id": "1102328",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_010",
+      "root_tweet_id": "1103233",
+      "brand_reply_tweet_id": "1103232",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_011",
+      "root_tweet_id": "1019739",
+      "brand_reply_tweet_id": "1019738",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_012",
+      "root_tweet_id": "1778375",
+      "brand_reply_tweet_id": "1778374",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_013",
+      "root_tweet_id": "705765",
+      "brand_reply_tweet_id": "705762",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_014",
+      "root_tweet_id": "1364410",
+      "brand_reply_tweet_id": "1364408",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_015",
+      "root_tweet_id": "1550925",
+      "brand_reply_tweet_id": "1550922",
+      "tweet_count": 5,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_016",
+      "root_tweet_id": "2798672",
+      "brand_reply_tweet_id": "2798671",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_017",
+      "root_tweet_id": "347056",
+      "brand_reply_tweet_id": "347053",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_018",
+      "root_tweet_id": "2368863",
+      "brand_reply_tweet_id": "2368862",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_019",
+      "root_tweet_id": "300836",
+      "brand_reply_tweet_id": "300834",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_020",
+      "root_tweet_id": "1633776",
+      "brand_reply_tweet_id": "1633774",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_021",
+      "root_tweet_id": "1231559",
+      "brand_reply_tweet_id": "1231558",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_022",
+      "root_tweet_id": "2315879",
+      "brand_reply_tweet_id": "2315876",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_023",
+      "root_tweet_id": "1698131",
+      "brand_reply_tweet_id": "1698129",
+      "tweet_count": 4,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_024",
+      "root_tweet_id": "2870227",
+      "brand_reply_tweet_id": "2870226",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_025",
+      "root_tweet_id": "1412236",
+      "brand_reply_tweet_id": "1412232",
+      "tweet_count": 5,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_026",
+      "root_tweet_id": "333771",
+      "brand_reply_tweet_id": "333769",
+      "tweet_count": 3,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_027",
+      "root_tweet_id": "1703533",
+      "brand_reply_tweet_id": "1703532",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_028",
+      "root_tweet_id": "2482944",
+      "brand_reply_tweet_id": "2482942",
+      "tweet_count": 3,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_029",
+      "root_tweet_id": "1467386",
+      "brand_reply_tweet_id": "1467381",
+      "tweet_count": 6,
+      "is_complete": true,
+      "flags": []
+    },
+    {
+      "brand": "AskPlayStation",
+      "conversation_id": "AskPlayStation_CONV_030",
+      "root_tweet_id": "456246",
+      "brand_reply_tweet_id": "456245",
+      "tweet_count": 2,
+      "is_complete": true,
+      "flags": []
+    }
+  ]
+}

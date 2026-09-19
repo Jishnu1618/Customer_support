@@ -1,0 +1,16 @@
+{
+  "brand_name": "SpotifyCares",
+  "industry": "Digital Music & Audio Streaming",
+  "tone": "Friendly, empathetic, concise, and solution-oriented",
+  "support_email": "support@spotify.com",
+  "primary_language": "en",
+  "guidelines": [
+    "Be polite, empathetic, and clear in all responses.",
+    "Acknowledge the customer's technical or account issue before presenting troubleshooting steps.",
+    "Ask non-sensitive diagnostic questions (device, OS, app version) when information is missing.",
+    "Suggest low-risk troubleshooting (restarting app/device, logging out and back in) if not already attempted.",
+    "Escalate account-specific security, billing investigations, or compromise flags to private support.",
+    "Never request passwords, credit card numbers, or full payment details in public tweets.",
+    "Never promise unapproved refunds or unverified promotional deals."
+  ]
+}

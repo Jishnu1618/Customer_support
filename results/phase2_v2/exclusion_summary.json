@@ -1,0 +1,546 @@
+{
+  "total_excluded": 1051,
+  "review_groups_blacklisted_from_eval": 121,
+  "exact_duplicates_removed": 138,
+  "language_state_counts": {
+    "english": 27364,
+    "non_english": 230,
+    "uncertain": 985
+  },
+  "inclusion_decision_counts": {
+    "included_english_eligible": 27364,
+    "excluded_uncertain_pending_review": 985,
+    "excluded_non_english": 230,
+    "excluded_uninterpretable": 0,
+    "excluded_structural_or_reference": 66
+  },
+  "uncertain_language_cases_count": 985,
+  "uncertain_language_sample": [
+    {
+      "sample_category": "uncertain",
+      "group_id": "2812",
+      "target_customer_tweet_id": "2837",
+      "text_snippet": "@[CUSTOMER_HANDLE] Pano kapag nakapostpaid hahha",
+      "customer_text": "@[CUSTOMER_HANDLE] Pano kapag nakapostpaid hahha",
+      "ancestor_turns": [
+        {
+          "tweet_id": "2812",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Sat Nov 18 18:27:09 +0000 2017",
+          "text": "Unli skips. Unli fun. 3 months of Premium for ₱9. https://t.co/Q2YbLhp7U6"
+        },
+        {
+          "tweet_id": "2837",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Tue Nov 21 11:42:48 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE] Pano kapag nakapostpaid hahha"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.15,
+      "detection_reason": "unrecognized_tokens_insufficient_evidence",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "11712",
+      "target_customer_tweet_id": "11712",
+      "text_snippet": "@[CUSTOMER_HANDLE] halo skrg kok udh gak ada pilihan bayar pakai pulsa ya untuk berlangganannya?",
+      "customer_text": "@[CUSTOMER_HANDLE] halo skrg kok udh gak ada pilihan bayar pakai pulsa ya untuk berlangganannya?",
+      "ancestor_turns": [
+        {
+          "tweet_id": "11712",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Wed Nov 01 00:45:16 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE] halo skrg kok udh gak ada pilihan bayar pakai pulsa ya untuk berlangganannya?"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.15,
+      "detection_reason": "unrecognized_tokens_insufficient_evidence",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "18469",
+      "target_customer_tweet_id": "18469",
+      "text_snippet": "@spotifycares wheres twicetagram by twice",
+      "customer_text": "@spotifycares wheres twicetagram by twice",
+      "ancestor_turns": [
+        {
+          "tweet_id": "18469",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Wed Nov 01 05:30:55 +0000 2017",
+          "text": "@spotifycares wheres twicetagram by twice"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.15,
+      "detection_reason": "unrecognized_tokens_insufficient_evidence",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "20794",
+      "target_customer_tweet_id": "20794",
+      "text_snippet": "@[CUSTOMER_HANDLE] 2 hari yang lalu saya mendapat email tsb padahal data alamat tinggal tidak ada ya",
+      "customer_text": "@[CUSTOMER_HANDLE] 2 hari yang lalu saya mendapat email tsb padahal data alamat tinggal tidak ada yang diubah mohon bantuannya https://t.co/VbB95ZFGDB",
+      "ancestor_turns": [
+        {
+          "tweet_id": "20794",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Wed Nov 01 07:00:09 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE] 2 hari yang lalu saya mendapat email tsb padahal data alamat tinggal tidak ada yang diubah mohon bantuannya https://t.co/VbB95ZFGDB"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.5,
+      "detection_reason": "technical_terms_no_stopwords",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "37699",
+      "target_customer_tweet_id": "37699",
+      "text_snippet": "@[CUSTOMER_HANDLE] sekarang ga bisa pembayaran premium dengan pulsa tri?",
+      "customer_text": "@[CUSTOMER_HANDLE] sekarang ga bisa pembayaran premium dengan pulsa tri?",
+      "ancestor_turns": [
+        {
+          "tweet_id": "37699",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Wed Nov 01 12:08:53 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE] sekarang ga bisa pembayaran premium dengan pulsa tri?"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.45,
+      "detection_reason": "single_stopword_low_ratio",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "38317",
+      "target_customer_tweet_id": "38317",
+      "text_snippet": "@SpotifyCares check dm pls",
+      "customer_text": "@SpotifyCares check dm pls",
+      "ancestor_turns": [
+        {
+          "tweet_id": "38317",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Wed Nov 01 13:15:59 +0000 2017",
+          "text": "@SpotifyCares check dm pls"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.15,
+      "detection_reason": "unrecognized_tokens_insufficient_evidence",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "44402",
+      "target_customer_tweet_id": "44402",
+      "text_snippet": "Hai @[CUSTOMER_HANDLE], kok gagal terus yaa? Dibilangnya pulsa tidak mencukupi, padahal pulsa lebih ",
+      "customer_text": "Hai @[CUSTOMER_HANDLE], kok gagal terus yaa? Dibilangnya pulsa tidak mencukupi, padahal pulsa lebih dari cukup https://t.co/PnP3gHQRCJ",
+      "ancestor_turns": [
+        {
+          "tweet_id": "44402",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Sat Nov 25 06:22:38 +0000 2017",
+          "text": "Hai @[CUSTOMER_HANDLE], kok gagal terus yaa? Dibilangnya pulsa tidak mencukupi, padahal pulsa lebih dari cukup https://t.co/PnP3gHQRCJ"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.15,
+      "detection_reason": "unrecognized_tokens_insufficient_evidence",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "45302",
+      "target_customer_tweet_id": "45302",
+      "text_snippet": "@[CUSTOMER_HANDLE]",
+      "customer_text": "@[CUSTOMER_HANDLE]",
+      "ancestor_turns": [
+        {
+          "tweet_id": "45302",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Wed Nov 22 19:40:52 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE]"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.0,
+      "detection_reason": "empty_text",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "58941",
+      "target_customer_tweet_id": "58935",
+      "text_snippet": "@[CUSTOMER_HANDLE] @SpotifyCares",
+      "customer_text": "@[CUSTOMER_HANDLE] @SpotifyCares",
+      "ancestor_turns": [
+        {
+          "tweet_id": "58941",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Wed Nov 01 20:25:57 +0000 2017",
+          "text": "Hey, @[CUSTOMER_HANDLE]  how do I report a bug?\nBanner ads with videos on your web player cause playback issues."
+        },
+        {
+          "tweet_id": "58935",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Wed Nov 01 20:26:37 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE] @SpotifyCares"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.0,
+      "detection_reason": "empty_text",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "66029",
+      "target_customer_tweet_id": "66029",
+      "text_snippet": "@[CUSTOMER_HANDLE] saya mendapat promo 3 bulan cuma Rp 4990 itu benar ga? Trs kl udh 3 bulan selesai",
+      "customer_text": "@[CUSTOMER_HANDLE] saya mendapat promo 3 bulan cuma Rp 4990 itu benar ga? Trs kl udh 3 bulan selesai bayarnya kembali ke awal?",
+      "ancestor_turns": [
+        {
+          "tweet_id": "66029",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Thu Nov 30 08:14:08 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE] saya mendapat promo 3 bulan cuma Rp 4990 itu benar ga? Trs kl udh 3 bulan selesai bayarnya kembali ke awal?"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.15,
+      "detection_reason": "unrecognized_tokens_insufficient_evidence",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "67652",
+      "target_customer_tweet_id": "67652",
+      "text_snippet": "Nakakaloko yung spotify ayaw tumanggap ng paymet sa globe",
+      "customer_text": "Nakakaloko yung spotify ayaw tumanggap ng paymet sa globe",
+      "ancestor_turns": [
+        {
+          "tweet_id": "67652",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Thu Nov 30 09:06:51 +0000 2017",
+          "text": "Nakakaloko yung spotify ayaw tumanggap ng paymet sa globe"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.45,
+      "detection_reason": "single_stopword_low_ratio",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "70686",
+      "target_customer_tweet_id": "70686",
+      "text_snippet": "@[CUSTOMER_HANDLE] Snälla börja utveckla för linux igen...",
+      "customer_text": "@[CUSTOMER_HANDLE] Snälla börja utveckla för linux igen...",
+      "ancestor_turns": [
+        {
+          "tweet_id": "70686",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Thu Nov 30 08:55:47 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE] Snälla börja utveckla för linux igen..."
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.5,
+      "detection_reason": "technical_terms_no_stopwords",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "72091",
+      "target_customer_tweet_id": "72092",
+      "text_snippet": "@[CUSTOMER_HANDLE] Nej 99kr står det när man faktiskt loggat in. Idioter.",
+      "customer_text": "@[CUSTOMER_HANDLE] Nej 99kr står det när man faktiskt loggat in. Idioter.",
+      "ancestor_turns": [
+        {
+          "tweet_id": "72091",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Sat Nov 18 18:41:52 +0000 2017",
+          "text": "3 månader Premium kostar bara 9,00 kr. Lyssna på musik offline vart du än går. https://t.co/OBLthO5jlx"
+        },
+        {
+          "tweet_id": "72092",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Thu Nov 23 23:42:28 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE] Nej 99kr står det när man faktiskt loggat in. Idioter."
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.45,
+      "detection_reason": "single_stopword_low_ratio",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "72091",
+      "target_customer_tweet_id": "72093",
+      "text_snippet": "@[CUSTOMER_HANDLE] Varför kan man inte betala med iTunes? Jag har bara iTunes. Kan ni inte fixa det?",
+      "customer_text": "@[CUSTOMER_HANDLE] Varför kan man inte betala med iTunes? Jag har bara iTunes. Kan ni inte fixa det? Hade varit grymt! :-)",
+      "ancestor_turns": [
+        {
+          "tweet_id": "72091",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Sat Nov 18 18:41:52 +0000 2017",
+          "text": "3 månader Premium kostar bara 9,00 kr. Lyssna på musik offline vart du än går. https://t.co/OBLthO5jlx"
+        },
+        {
+          "tweet_id": "72093",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Sun Nov 26 20:20:31 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE] Varför kan man inte betala med iTunes? Jag har bara iTunes. Kan ni inte fixa det? Hade varit grymt! :-)"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.15,
+      "detection_reason": "unrecognized_tokens_insufficient_evidence",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "74910",
+      "target_customer_tweet_id": "74910",
+      "text_snippet": "Hai @[CUSTOMER_HANDLE] kenapa album 'Jalan Terus' dari @[CUSTOMER_HANDLE] tidak ada ya? Dari 'Pejant",
+      "customer_text": "Hai @[CUSTOMER_HANDLE] kenapa album 'Jalan Terus' dari @[CUSTOMER_HANDLE] tidak ada ya? Dari 'Pejantan Tangguh' langsung ke '507' https://t.co/lgqkDRWnoq",
+      "ancestor_turns": [
+        {
+          "tweet_id": "74910",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Thu Nov 30 09:30:01 +0000 2017",
+          "text": "Hai @[CUSTOMER_HANDLE] kenapa album 'Jalan Terus' dari @[CUSTOMER_HANDLE] tidak ada ya? Dari 'Pejantan Tangguh' langsung ke '507' https://t.co/lgqkDRWnoq"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.45,
+      "detection_reason": "single_stopword_low_ratio",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "77694",
+      "target_customer_tweet_id": "77697",
+      "text_snippet": "@[CUSTOMER_HANDLE] min, typo ya? Di picture 49,990 tapi di tweet 4,990... Konfirmasi ya",
+      "customer_text": "@[CUSTOMER_HANDLE] min, typo ya? Di picture 49,990 tapi di tweet 4,990... Konfirmasi ya",
+      "ancestor_turns": [
+        {
+          "tweet_id": "77694",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Sat Nov 18 19:04:16 +0000 2017",
+          "text": "3 bulan Premium hanya Rp 4.990. Putar musik offline di mana saja. https://t.co/OaXjQ0a5lO"
+        },
+        {
+          "tweet_id": "77697",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Wed Nov 22 15:30:35 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE] min, typo ya? Di picture 49,990 tapi di tweet 4,990... Konfirmasi ya"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.15,
+      "detection_reason": "unrecognized_tokens_insufficient_evidence",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "77731",
+      "target_customer_tweet_id": "77731",
+      "text_snippet": "@SpotifyCares ? https://t.co/6clOTzr1Wf",
+      "customer_text": "@SpotifyCares ? https://t.co/6clOTzr1Wf",
+      "ancestor_turns": [
+        {
+          "tweet_id": "77731",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Thu Nov 30 09:52:08 +0000 2017",
+          "text": "@SpotifyCares ? https://t.co/6clOTzr1Wf"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.0,
+      "detection_reason": "too_short",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "100136",
+      "target_customer_tweet_id": "100136",
+      "text_snippet": "@SpotifyCares Bring Jay-Z back",
+      "customer_text": "@SpotifyCares Bring Jay-Z back",
+      "ancestor_turns": [
+        {
+          "tweet_id": "100136",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Thu Nov 30 17:13:40 +0000 2017",
+          "text": "@SpotifyCares Bring Jay-Z back"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.15,
+      "detection_reason": "unrecognized_tokens_insufficient_evidence",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "100197",
+      "target_customer_tweet_id": "100196",
+      "text_snippet": "@SpotifyCares @[CUSTOMER_HANDLE]",
+      "customer_text": "@SpotifyCares @[CUSTOMER_HANDLE]",
+      "ancestor_turns": [
+        {
+          "tweet_id": "100197",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Thu Nov 30 16:33:07 +0000 2017",
+          "text": "@SpotifyCares I have two issues, one I can’t link my regular account with my artist account made through distrokid (cause I can’t find it) &amp; two, my music that has been uploaded through distrokid is on multiple wrong accounts that aren’t mine."
+        },
+        {
+          "tweet_id": "100196",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Thu Nov 30 16:41:01 +0000 2017",
+          "text": "@SpotifyCares @[CUSTOMER_HANDLE]"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.0,
+      "detection_reason": "empty_text",
+      "inclusion_decision": "excluded_pending_human_review"
+    },
+    {
+      "sample_category": "uncertain",
+      "group_id": "104139",
+      "target_customer_tweet_id": "104138",
+      "text_snippet": "@[CUSTOMER_HANDLE] Voisko vanha tilaaja saada pari-kolme kk myös 0.99 hintaan?",
+      "customer_text": "@[CUSTOMER_HANDLE] Voisko vanha tilaaja saada pari-kolme kk myös 0.99 hintaan?",
+      "ancestor_turns": [
+        {
+          "tweet_id": "104139",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Sat Nov 18 18:36:31 +0000 2017",
+          "text": "Älä anna mainosten katkaista flow'ta. 3 kuukautta Premiumia nyt vain 0,99 €. https://t.co/SyjulZrtZe"
+        },
+        {
+          "tweet_id": "104138",
+          "author_id": "Customer",
+          "inbound": 1,
+          "created_at": "Wed Nov 22 12:56:03 +0000 2017",
+          "text": "@[CUSTOMER_HANDLE] Voisko vanha tilaaja saada pari-kolme kk myös 0.99 hintaan?"
+        }
+      ],
+      "language_state": "uncertain",
+      "language_heuristic_score": 0.15,
+      "detection_reason": "unrecognized_tokens_insufficient_evidence",
+      "inclusion_decision": "excluded_pending_human_review"
+    }
+  ],
+  "breakdown": {
+    "UNCERTAIN_LANGUAGE_unrecognized_tokens_insufficient_evidence": 173,
+    "STRUCTURAL_MISSING_PARENT:14947": 1,
+    "UNCERTAIN_LANGUAGE_technical_terms_no_stopwords": 12,
+    "NON_ENGLISH_non_latin_script": 27,
+    "UNCERTAIN_LANGUAGE_single_stopword_low_ratio": 160,
+    "STRUCTURAL_MISSING_PARENT:41779": 1,
+    "UNCERTAIN_LANGUAGE_empty_text": 184,
+    "NON_ENGLISH_non_english_stopwords": 131,
+    "UNCERTAIN_LANGUAGE_too_short": 135,
+    "STRUCTURAL_MISSING_PARENT:199171": 1,
+    "STRUCTURAL_MISSING_PARENT:203063": 1,
+    "STRUCTURAL_MISSING_PARENT:283261": 1,
+    "STRUCTURAL_MISSING_PARENT:289770": 1,
+    "STRUCTURAL_MISSING_PARENT:365734": 1,
+    "STRUCTURAL_MISSING_PARENT:371596": 1,
+    "STRUCTURAL_MISSING_PARENT:407159": 1,
+    "STRUCTURAL_MISSING_PARENT:431435": 1,
+    "STRUCTURAL_MISSING_PARENT:448864": 1,
+    "STRUCTURAL_MISSING_PARENT:620445": 1,
+    "STRUCTURAL_MISSING_PARENT:643424": 1,
+    "STRUCTURAL_MISSING_PARENT:709675": 1,
+    "STRUCTURAL_MISSING_PARENT:723056": 1,
+    "STRUCTURAL_MISSING_PARENT:782963": 1,
+    "UNCERTAIN_LANGUAGE_no_alphabetic_words": 25,
+    "STRUCTURAL_MISSING_PARENT:798489": 1,
+    "STRUCTURAL_MISSING_PARENT:839958": 1,
+    "STRUCTURAL_MISSING_PARENT:847130": 1,
+    "STRUCTURAL_MISSING_PARENT:859932": 1,
+    "STRUCTURAL_MISSING_PARENT:962312": 1,
+    "STRUCTURAL_MISSING_PARENT:1087972": 1,
+    "STRUCTURAL_MISSING_PARENT:1096204": 1,
+    "STRUCTURAL_MISSING_PARENT:1109996": 1,
+    "STRUCTURAL_MISSING_PARENT:1189539": 1,
+    "STRUCTURAL_MISSING_PARENT:1197648": 1,
+    "STRUCTURAL_MISSING_PARENT:1199852": 1,
+    "STRUCTURAL_MISSING_PARENT:1222464": 1,
+    "STRUCTURAL_MISSING_PARENT:1229819": 1,
+    "STRUCTURAL_MISSING_PARENT:1280116": 1,
+    "STRUCTURAL_MISSING_PARENT:1349647": 1,
+    "STRUCTURAL_MISSING_PARENT:1455463": 1,
+    "STRUCTURAL_MISSING_PARENT:1462718": 1,
+    "STRUCTURAL_MISSING_PARENT:1474855": 1,
+    "STRUCTURAL_MISSING_PARENT:1531541": 1,
+    "STRUCTURAL_MISSING_PARENT:1635377": 1,
+    "STRUCTURAL_MISSING_PARENT:1773086": 1,
+    "STRUCTURAL_MISSING_PARENT:1778461": 1,
+    "STRUCTURAL_MISSING_PARENT:1797080": 1,
+    "STRUCTURAL_MISSING_PARENT:1808944": 1,
+    "STRUCTURAL_MISSING_PARENT:1813809": 1,
+    "STRUCTURAL_MISSING_PARENT:1851256": 1,
+    "STRUCTURAL_MISSING_PARENT:1858045": 1,
+    "STRUCTURAL_MISSING_PARENT:1920585": 1,
+    "STRUCTURAL_MISSING_PARENT:1933737": 1,
+    "STRUCTURAL_MISSING_PARENT:1956873": 1,
+    "STRUCTURAL_MISSING_PARENT:1966392": 1,
+    "STRUCTURAL_MISSING_PARENT:1982579": 1,
+    "STRUCTURAL_MISSING_PARENT:1995978": 1,
+    "STRUCTURAL_MISSING_PARENT:2042300": 1,
+    "STRUCTURAL_MISSING_PARENT:2042831": 1,
+    "STRUCTURAL_MISSING_PARENT:2058831": 1,
+    "STRUCTURAL_MISSING_PARENT:2114150": 1,
+    "STRUCTURAL_MISSING_PARENT:2114197": 1,
+    "STRUCTURAL_MISSING_PARENT:2116886": 1,
+    "STRUCTURAL_MISSING_PARENT:2317063": 1,
+    "STRUCTURAL_MISSING_PARENT:2439881": 1,
+    "STRUCTURAL_MISSING_PARENT:2442031": 1,
+    "STRUCTURAL_MISSING_PARENT:2668074": 1,
+    "STRUCTURAL_MISSING_PARENT:2721862": 1,
+    "STRUCTURAL_MISSING_PARENT:2780803": 1,
+    "STRUCTURAL_MISSING_PARENT:2846496": 1,
+    "STRUCTURAL_MISSING_PARENT:2916595": 1,
+    "STRUCTURAL_MISSING_PARENT:2926304": 1,
+    "STRUCTURAL_MISSING_PARENT:2970811": 1,
+    "STRUCTURAL_MISSING_PARENT:2973968": 1,
+    "EXACT_DUPLICATE_INQUIRY": 138
+  }
+}

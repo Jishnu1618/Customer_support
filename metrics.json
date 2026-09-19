@@ -1,0 +1,135 @@
+{
+  "judge_mode": "heuristic",
+  "coverage": {
+    "mode": "heuristic",
+    "note": "Heuristic (keyword/regex) judge \u2014 NOT an LLM judgment. Run --llm for actual LLM scoring."
+  },
+  "systems": {
+    "baseline_0_majority": {
+      "system_name": "Baseline 0",
+      "total_messages": 200,
+      "intent_accuracy": {
+        "val": 0.035,
+        "num": 7,
+        "denom": 200,
+        "ci_95": [
+          0.0171,
+          0.0705
+        ]
+      },
+      "escalation_recall": {
+        "val": 1.0,
+        "num": 20,
+        "denom": 20,
+        "ci_95": [
+          0.8389,
+          1.0
+        ]
+      },
+      "automation_coverage": {
+        "val": 0.0,
+        "num": 0,
+        "denom": 200,
+        "ci_95": [
+          0.0,
+          0.0188
+        ]
+      },
+      "unsafe_automation_rate": "N/A (0 automated)",
+      "reply_quality_note": "Scored 200/200 rows (heuristic)",
+      "relevance_0_2": 2.0,
+      "grounding_0_2": 1.0,
+      "usefulness_0_2": 1.0,
+      "tone_0_2": 2.0,
+      "critical_errors": {
+        "num": 0,
+        "denom": 200,
+        "rate": 0.0
+      }
+    },
+    "baseline_1_rules": {
+      "system_name": "Baseline 1",
+      "total_messages": 200,
+      "intent_accuracy": {
+        "val": 0.44,
+        "num": 88,
+        "denom": 200,
+        "ci_95": [
+          0.373,
+          0.5093
+        ]
+      },
+      "escalation_recall": {
+        "val": 0.7,
+        "num": 14,
+        "denom": 20,
+        "ci_95": [
+          0.481,
+          0.8545
+        ]
+      },
+      "automation_coverage": {
+        "val": 0.89,
+        "num": 178,
+        "denom": 200,
+        "ci_95": [
+          0.8391,
+          0.9262
+        ]
+      },
+      "unsafe_automation_rate": "3.4% (6/178)",
+      "reply_quality_note": "Scored 200/200 rows (heuristic)",
+      "relevance_0_2": 2.0,
+      "grounding_0_2": 1.7,
+      "usefulness_0_2": 1.58,
+      "tone_0_2": 1.63,
+      "critical_errors": {
+        "num": 6,
+        "denom": 200,
+        "rate": 0.03
+      }
+    },
+    "main_agent_v1": {
+      "system_name": "Main Agent",
+      "total_messages": 200,
+      "intent_accuracy": {
+        "val": 0.445,
+        "num": 89,
+        "denom": 200,
+        "ci_95": [
+          0.3778,
+          0.5143
+        ]
+      },
+      "escalation_recall": {
+        "val": 0.95,
+        "num": 19,
+        "denom": 20,
+        "ci_95": [
+          0.7639,
+          0.9911
+        ]
+      },
+      "automation_coverage": {
+        "val": 0.545,
+        "num": 109,
+        "denom": 200,
+        "ci_95": [
+          0.4758,
+          0.6125
+        ]
+      },
+      "unsafe_automation_rate": "0.9% (1/109)",
+      "reply_quality_note": "Scored 200/200 rows (heuristic)",
+      "relevance_0_2": 1.78,
+      "grounding_0_2": 1.0,
+      "usefulness_0_2": 1.0,
+      "tone_0_2": 1.33,
+      "critical_errors": {
+        "num": 1,
+        "denom": 200,
+        "rate": 0.005
+      }
+    }
+  }
+}
