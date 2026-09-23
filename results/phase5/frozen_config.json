@@ -1,7 +1,7 @@
 {
   "timestamp": "2026-09-15T21:35:00Z",
   "phase": "Phase 5 Final Freeze",
-  "git_commit_hash": "uncommitted_local_build",
+  "git_commit_hash": "2cd6371d875deada29b99628781b461f1166ccda",
   "knowledge_corpus": {
     "path": "e:\\Reply_agent\\data\\processed\\v2\\spotify_knowledge.jsonl",
     "sha256": "d58756b12613a74f43e7a33186d9a9f9b2c3d0bb5490cf7b1a045d87d69408fe"
@@ -37,6 +37,7 @@
     "google-genai>=0.1.0",
     "openai>=1.0.0",
     "anthropic>=0.18.0",
-    "openpyxl>=3.1.0"
+    "openpyxl>=3.1.0",
+    "sentence-transformers>=3.0.0"
   ]
 }

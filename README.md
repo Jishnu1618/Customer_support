@@ -171,18 +171,20 @@ Reply_agent/
 
 ## 📊 Summary Results Table (200 Evaluation Messages)
 
-| Metric | Baseline 0 (`baseline_0_majority`) | Baseline 1 (`baseline_1_rules`) | Main Agent (`main_agent_v1`) |
-|---|---|---|---|
-| **Evaluated Messages (N)** | **200** | **200** | **200** |
-| **Intent Classification Accuracy** | 16.0% (32/200) | 76.0% (152/200) | **87.5% (175/200) [82.3%–91.4%]** |
-| **Escalation Recall** | 100.0% (172/172) | 57.0% (98/172) | **100.0% (172/172) [97.8%–100.0%]** |
-| **Automation Coverage** | 0.0% (0/200) | 57.0% (114/200) | **32.5% (65/200) [26.4%–39.3%]** |
-| **Unsafe Automation Rate** | N/A (0 automated) | 64.9% (74/114) | **0.0% (0/65) [0.0%–5.5%]** |
-| **Relevance (0–2)** | 1.16 / 2.0 | 1.76 / 2.0 | **2.00 / 2.0** |
-| **Grounding (0–2)** | 1.16 / 2.0 | 1.76 / 2.0 | **2.00 / 2.0** |
-| **Usefulness (0–2)** | 1.00 / 2.0 | 1.58 / 2.0 | **1.58 / 2.0** |
-| **Tone (0–2)** | 1.95 / 2.0 | 1.62 / 2.0 | **1.62 / 2.0** |
-| **Critical Error Rate** | 0.0% (0/200) | 0.0% (0/200) | **0.0% (0/200)** |
+| Metric | Baseline 0 (`baseline_0_majority`) | Baseline 1 (`baseline_1_rules`) | Main Agent v1 (Frozen) | Main Agent v2 (Post-Tuning) |
+|---|---|---|---|---|
+| **Evaluated Messages (N)** | **200** | **200** | **200** | **200** |
+| **Intent Classification Accuracy** | 3.5% (7/200) [1.7%–7.1%] | 44.0% (88/200) [37.3%–50.9%] | 44.5% (89/200) [37.8%–51.4%] | **51.5% (103/200) [44.6%–58.3%]** |
+| **Escalation Recall** | 100.0% (20/20) [83.9%–100.0%] | 70.0% (14/20) [48.1%–85.5%] | 95.0% (19/20) [76.4%–99.1%] | **90.0% (18/20) [69.9%–97.2%]** |
+| **Automation Coverage** | 0.0% (0/200) [0.0%–1.9%] | 89.0% (178/200) [83.9%–92.6%] | 54.5% (109/200) [47.6%–61.3%] | **75.5% (151/200) [69.1%–80.9%]** |
+| **Unsafe Automation Rate** | N/A (0 automated) | 3.9% (7/178) | 5.5% (6/109) | **2.0% (3/151)** |
+| **Relevance (0–2, LLM Judge)** | 1.16 / 2.0 | 0.51 / 2.0 | 0.87 / 2.0 | **0.87 / 2.0** |
+| **Grounding (0–2, LLM Judge)** | 1.00 / 2.0 | 0.97 / 2.0 | 0.88 / 2.0 | **0.78 / 2.0** |
+| **Usefulness (0–2, LLM Judge)** | 0.97 / 2.0 | 0.65 / 2.0 | 0.36 / 2.0 | **0.52 / 2.0** |
+| **Tone (0–2, LLM Judge)** | 1.97 / 2.0 | 1.03 / 2.0 | 1.43 / 2.0 | **1.63 / 2.0** |
+| **Critical Error Rate (LLM Judge)** | 0.0% (0/200) | 9.0% (18/200) | 23.5% (47/200) | **9.8% (10/102)** |
+
+*Note: Reply quality scores are evaluated via the LLM Judge (`qwen/qwen3.8-27b`) with prompt v2.0 few-shot calibration. 95% Confidence Intervals calculated via Wilson score method.*
 
 ---
 

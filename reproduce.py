@@ -55,8 +55,9 @@ def run_cached_judge():
 
 
 def run_llm_judge():
-    print("=== Live LLM Judge Scoring Mode ===")
-    print("Scoring 600 predictions with the LLM judge (groq/compound).")
+    from configs.settings import settings
+    judge_model = getattr(settings, "llm_judge_model", settings.llm_model)
+    print(f"Scoring 600 predictions with the LLM judge ({settings.llm_provider}/{judge_model}).")
     print("Results cached in results/phase6/llm_judge_cache.jsonl with provenance.")
     print("Failures recorded. Heuristic scores NOT substituted on failure.")
     run_evaluation(use_llm=True, cached_judge=False)

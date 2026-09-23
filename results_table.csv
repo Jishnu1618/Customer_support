@@ -1,4 +1,4 @@
 system_id,system_name,judge_mode,total_messages,intent_accuracy,escalation_recall,automation_coverage,unsafe_automation_rate,relevance,grounding,usefulness,tone,critical_error_count,reply_quality_note
-baseline_0_majority,Baseline 0,heuristic,200,3.5% (7/200),100.0% (20/20),0.0% (0/200),N/A (0 automated),2.0,1.0,1.0,2.0,0,Scored 200/200 rows (heuristic)
-baseline_1_rules,Baseline 1,heuristic,200,44.0% (88/200),70.0% (14/20),89.0% (178/200),3.4% (6/178),2.0,1.7,1.58,1.63,6,Scored 200/200 rows (heuristic)
-main_agent_v1,Main Agent,heuristic,200,44.5% (89/200),95.0% (19/20),54.5% (109/200),0.9% (1/109),1.78,1.0,1.0,1.33,1,Scored 200/200 rows (heuristic)
+baseline_0_majority,Baseline 0,llm_cached,200,3.5% (7/200),100.0% (20/20),0.0% (0/200),N/A (0 automated),1.16,1.0,0.97,1.97,0,Scored 200/200 rows (llm_cached)
+baseline_1_rules,Baseline 1,llm_cached,200,44.0% (88/200),70.0% (14/20),89.0% (178/200),3.4% (6/178),0.51,0.97,0.65,1.03,18,Scored 200/200 rows (llm_cached)
+main_agent_v1,Main Agent,llm_cached,200,51.5% (103/200),90.0% (18/20),75.5% (151/200),2.0% (3/151),0.81,0.73,0.47,1.6,14,Scored 129/200 rows (llm_cached); 71 rows unscored (LLM failure)

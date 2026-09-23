@@ -1,0 +1,175 @@
+# Implementation Plan: Complete Assignment Deliverables
+
+**Repo:** https://github.com/Jishnu1618/Customer_support  
+**Provider configured:** `gemini` (`gemini-2.5-flash`)  
+**Date:** 2026-09-19
+
+---
+
+## Current Blockers (Ranked by Criticality)
+
+| # | Blocker | Impact |
+|---|---|---|
+| 🔴 B1 | `metrics.json` (44.5%) ≠ `final_report.md` (87.5%) — different runs | **Fails reviewer sanity check** |
+| 🔴 B2 | LLM judge cache = 136/600 — `--mode cached-judge` is broken | **Reviewer can't reproduce** |
+| 🔴 B3 | Human-judge κ measured vs. heuristic, not LLM judge | **Core eval harness claim is wrong** |
+| 🔴 B4 | LLM judge in `llm_judge.py` defaults to Groq provider — need Gemini | **No API key for Groq** |
+
+---
+
+## Phase 1 — Wire Gemini into the LLM Judge (Fixes B4)
+
+### What to Change
+
+#### [MODIFY] [`src/llm.py`](file:///e:/Reply_agent/src/llm.py)
+- The Gemini branch already exists (lines 78–88) ✅
+- **Issue:** `generate_reply` doesn't pass `system_prompt` in the Gemini branch and uses old `genai.Client` API
+- **Fix:** Make the Gemini branch consistent with the rest; add system prompt support via `contents` list
+
+#### [MODIFY] [`configs/settings.py`](file:///e:/Reply_agent/configs/settings.py)
+- `llm_judge_model` currently defaults to `groq/compound`
+- **Fix:** When `LLM_PROVIDER=google`, default `llm_judge_model` to `gemini-2.5-flash`
+
+#### [MODIFY] [`llm_judge.py`](file:///e:/Reply_agent/llm_judge.py)
+- `PROVIDER_DEFAULT = "groq"` and `MODEL_DEFAULT = "compound"` — hard-coded
+- **Fix:** Read defaults from `settings.llm_provider` and `settings.llm_judge_model` instead
+
+#### [MODIFY] [`.env`](file:///e:/Reply_agent/.env)
+- Uncomment/ensure:
+  ```
+  LLM_PROVIDER=gemini
+  LLM_MODEL=gemini-2.5-flash
+  LLM_JUDGE_MODEL=gemini-2.5-flash
+  GEMINI_API_KEY=<your key>
+  ```
+
+---
+
+## Phase 2 — Run LLM Judge to Completion (Fixes B2)
+
+Once Gemini is wired in, run:
+
+```powershell
+python reproduce.py --mode llm-judge
+```
+
+- Scores all **600 predictions** (200 records × 3 systems)
+- Already has 136 cache hits → only **464 new API calls** needed
+- At 2s/call ≈ ~16 minutes (within the 15-min window for the remaining gap)
+- Cache is append-only; safe to restart if interrupted
+
+**Expected output:** `results/phase6/llm_judge_cache.jsonl` grows to 600 entries
+
+---
+
+## Phase 3 — Recompute Human-Judge Agreement vs. LLM Judge (Fixes B3)
+
+After the LLM judge cache is full:
+
+#### [MODIFY] [`evaluate.py`](file:///e:/Reply_agent/evaluate.py)
+- Find the `compute_judge_agreement()` function (currently computes kappa between human ratings and heuristic judge)
+- Add a `--llm-agreement` path that:
+  1. Loads the 90 `human_ratings.csv` rows (REV-001 to REV-090)
+  2. Joins them to the LLM judge scores from `llm_judge_cache.jsonl` via `example_id + system_id → blinded_system_id`
+  3. Recomputes 4-dimension linear-weighted Cohen's κ
+  4. Writes updated `judge_agreement.json` with `judge_type_compared: "llm"`
+
+**Target:** κ ≥ 0.2 on any dimension (showing LLM judge is meaningfully better than heuristic's κ ≈ 0)
+
+Run:
+```powershell
+python evaluate.py --cached-judge
+```
+This regenerates `metrics.json` + `judge_agreement.json` from LLM scores.
+
+---
+
+## Phase 4 — Reconcile Numbers & Update Report (Fixes B1)
+
+### Root Cause
+`final_report.md` shows numbers from an older evaluation run with different gold labels. `metrics.json` reflects the current heuristic run.
+
+### Fix Sequence
+1. Run `python reproduce.py --mode inference` → regenerates all 600 predictions from current frozen code
+2. Run `python reproduce.py --mode cached-judge` → regenerates `metrics.json` from LLM cache
+3. Open `final_report.md` → update **Section 4.1 table** with the new LLM-judged numbers
+4. Update `README.md` **Summary Results Table** to match
+
+#### [MODIFY] [`final_report.md`](file:///e:/Reply_agent/final_report.md)
+- Update the results table in Section 4.1
+- Update Section 4.3 judge agreement kappa values to LLM-vs-human numbers
+- Update Section 6.1 misleading headline to reflect actual LLM judge scores
+
+#### [MODIFY] [`README.md`](file:///e:/Reply_agent/README.md)
+- Update the summary results table (line 174–185)
+- Add `reply_human_review_task_v2_annonated.xlsx` to the file listing
+
+---
+
+## Phase 5 — Upgrade Intent Classifier to Gemini (Excellence Boost)
+
+> **Optional but high impact** — this closes the real accuracy gap honestly.
+
+The current regex classifier achieves ~44.5% intent accuracy. An LLM-based classifier using Gemini can realistically reach **80–90%** which matches the historical numbers in the report.
+
+#### [NEW] [`src/gemini_classifier.py`](file:///e:/Reply_agent/src/gemini_classifier.py)
+A new classifier that:
+1. Takes `(customer_message, prior_context)` as input
+2. Sends a structured prompt to `gemini-2.5-flash` with the 8-intent taxonomy + few-shot examples
+3. Returns `{intent, risk_signals, confidence}` as JSON
+4. Falls back to regex rules if LLM call fails (maintaining reliability)
+
+#### [MODIFY] [`src/pipeline.py`](file:///e:/Reply_agent/src/pipeline.py)
+- Make `classify()` use `GeminiClassifier` when `LLM_PROVIDER=gemini` is set
+- Regex rules remain as the fallback (`USE_LLM_CLASSIFY=true` env flag)
+
+#### [NEW] `results/phase5/main_agent_v2_predictions.jsonl`
+- Re-run `reproduce.py --mode inference` with the new classifier
+- New system ID: `main_agent_v2`
+
+#### [MODIFY] `evaluate.py` + `reproduce.py`
+- Add `main_agent_v2` as a fourth system column in the results table
+
+---
+
+## Phase 6 — Polish & Push to GitHub
+
+#### [MODIFY] [`README.md`](file:///e:/Reply_agent/README.md)
+- Fix submission email: replace `e:/Reply_agent` with `https://github.com/Jishnu1618/Customer_support`
+- Add demo command: `python demo.py --message "My Spotify app keeps crashing on iPhone"`
+
+#### [NEW] [`demo.py`](file:///e:/Reply_agent/demo.py)
+- Single-tweet demo: `python demo.py "My Spotify keeps crashing"`
+- Shows intent → retrieval → reply → routing in one clean terminal output
+- No API key needed (uses local TF-IDF baseline)
+
+#### [MODIFY] [`decision_log.md`](file:///e:/Reply_agent/decision_log.md)
+- Add **Decision 14:** Switched from Groq to Gemini as LLM judge provider (rationale: only key available; same rubric/prompt, so results are comparable)
+
+---
+
+## Execution Order
+
+```
+Phase 1  Wire Gemini → test with 1 sample (5 min)
+Phase 2  Run llm-judge to 600/600 (15–20 min, background task)
+Phase 3  Recompute human-judge kappa vs LLM (2 min)
+Phase 4  Reconcile numbers + update report + README (10 min)
+Phase 5  Gemini intent classifier (30 min, highest excellence gain)
+Phase 6  demo.py + final push to GitHub (10 min)
+```
+
+**Total: ~1 hour to close all blockers. 2 hours including Phase 5.**
+
+---
+
+## Open Questions
+
+> [!IMPORTANT]
+> **Q1:** The `GEMINI_API_KEY` in `.env` starts with `AQ.` which is an unusual format (standard Gemini keys start with `AI`). Should we verify the key works before running the full 600-call judge run?
+
+> [!IMPORTANT]  
+> **Q2:** Do you want to add `main_agent_v2` (LLM-based classifier) as a **4th system** in the evaluation table, or keep it as a "Next Week" roadmap item in the report? Adding it now is the strongest move but takes ~30 extra minutes.
+
+> [!NOTE]
+> **Q3:** The `LLM_JUDGE_MODEL` env var is commented out (or missing) from `.env`. Once we set it, the cache key will change because `model_id` is part of the hash. This means the existing 136 cached entries will be **invalidated** (new model = new cache key). We'll need to re-run all 600. This is fine — just worth knowing upfront.

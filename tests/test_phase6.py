@@ -116,7 +116,8 @@ def test_llm_judge_returns_correct_schema(tmp_path):
     # Provenance fields present
     assert result.get("model_id"), "model_id must be present"
     assert result.get("rubric_sha256"), "rubric_sha256 must be present"
-    assert result.get("prompt_version") == "v1.0"
+    assert result.get("prompt_version") in ("v1.0", "v2.0"), \
+        f"prompt_version must be a known valid version, got {result.get('prompt_version')!r}"
     assert result.get("cache_key"), "cache_key must be present"
 
 

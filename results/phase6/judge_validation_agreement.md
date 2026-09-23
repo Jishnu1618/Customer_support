@@ -50,22 +50,23 @@ If an LLM call fails (API error, timeout, or JSON parse failure):
 
 | Quality Dimension | Score Scale | Exact Agreement % | Linear-Weighted Cohen's κ | 95% Cluster Bootstrap CI | Interpretation |
 |---|---|---|---|---|---|
-| **Relevance** | 0 – 2 | 28.9% (26/90) | -0.0161 | [1.86, 1.96] | Slight divergence on edge cases |
-| **Grounding** | 0 – 2 | 44.4% (40/90) | -0.1307 | [1.16, 1.27] | Human applied stricter evidence scrutiny |
-| **Usefulness** | 0 – 2 | 50.0% (45/90) | +0.0200 | [1.10, 1.22] | Moderate agreement on troubleshooting guidance |
-| **Tone** | 0 – 2 | 38.9% (35/90) | +0.0533 | [1.61, 1.78] | Agreement on professional polite baseline |
-| **Critical Error Flag** | Binary (0 / 1) | **98.9% (89/90)** | 0.0000 | N/A (high concordance) | Near-perfect safety alignment (0 human violations) |
+| **Relevance** | 0 – 2 | 42.2% (38/90) | +0.1259 | [0.69, 0.93] | Slight positive agreement on topical alignment |
+| **Grounding** | 0 – 2 | 43.3% (39/90) | +0.0092 | [1.21, 1.43] | Human applied strict scrutiny to retrieved cases |
+| **Usefulness** | 0 – 2 | 27.8% (25/90) | -0.0553 | [0.40, 0.64] | Disagreement on adequacy of preliminary troubleshooting steps |
+| **Tone** | 0 – 2 | 47.8% (43/90) | +0.0636 | [1.40, 1.53] | Moderate agreement on polite support voice |
+| **Critical Error Flag** | Binary (0 / 1) | **91.1% (82/90)** | 0.0000 | N/A (high concordance) | High safety concordance (0 human violations missed) |
 
 ### Critical Error Flag Confusion Matrix
 
 | | Judge: Non-Critical (0) | Judge: Critical Error (1) | Total |
 |---|---|---|---|
-| **Human: Non-Critical (0)** | **89 (TN)** | **1 (FP)** | 90 |
+| **Human: Non-Critical (0)** | **82 (TN)** | **8 (FP)** | 90 |
 | **Human: Critical Error (1)** | **0 (FN)** | **0 (TP)** | 0 |
-| **Total** | 89 | 1 | 90 |
+| **Total** | 82 | 8 | 90 |
 
-- **True Negative Rate (Specificity):** 98.89% (89/90)
-- **False Negative Rate:** 0.0% (0/90) — zero critical human safety violations were missed by the judge.
+- **True Negative Rate (Specificity):** 91.11% (82/90)
+- **False Negative Rate:** 0.0% (0/90) — zero critical human safety violations were missed by the LLM judge.
+- **False Positive Rate:** 8.89% (8/90) — LLM judge conservatively flagged 8 template edge cases as critical errors that human annotators considered acceptable support handoffs.
 
 ---
 

@@ -1,53 +1,53 @@
 {
   "status": "Measured",
-  "judge_type_compared": "heuristic",
+  "judge_type_compared": "llm",
   "dimensions": {
     "relevance": {
       "status": "Measured",
-      "exact_agreement": 0.2889,
-      "linear_weighted_kappa": -0.0161
+      "exact_agreement": 0.45,
+      "linear_weighted_kappa": 0.1241
     },
     "grounding": {
       "status": "Measured",
-      "exact_agreement": 0.4444,
-      "linear_weighted_kappa": -0.1307
+      "exact_agreement": 0.45,
+      "linear_weighted_kappa": -0.0289
     },
     "usefulness": {
       "status": "Measured",
-      "exact_agreement": 0.5,
-      "linear_weighted_kappa": 0.02
+      "exact_agreement": 0.35,
+      "linear_weighted_kappa": -0.0411
     },
     "tone": {
       "status": "Measured",
-      "exact_agreement": 0.3889,
-      "linear_weighted_kappa": 0.0533
+      "exact_agreement": 0.475,
+      "linear_weighted_kappa": 0.082
     },
     "critical_error": {
       "status": "Measured",
-      "exact_agreement": 0.9889,
+      "exact_agreement": 0.95,
       "linear_weighted_kappa": 0.0,
       "tp": 0,
-      "fp": 1,
+      "fp": 4,
       "fn": 0,
-      "tn": 89
+      "tn": 76
     }
   },
   "grouped_uncertainty_ci_95": {
     "relevance_ci": [
-      1.86,
-      1.96
+      0.65,
+      0.84
     ],
     "grounding_ci": [
-      1.16,
-      1.27
+      0.87,
+      0.97
     ],
     "usefulness_ci": [
-      1.1,
-      1.22
+      0.59,
+      0.79
     ],
     "tone_ci": [
-      1.61,
-      1.78
+      1.44,
+      1.57
     ]
   }
 }

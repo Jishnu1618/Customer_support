@@ -10,12 +10,12 @@
 
 | Metric | Baseline 0 (Majority Class) | Baseline 1 (Keyword Rules) | Main Agent Pipeline | Delta (Main vs B1) |
 |---|---|---|---|---|
-| **Intent Classification Accuracy** | 3.5% | 44.0% | **44.5%** | +0.5% |
-| **Escalation Routing Accuracy** | 10.0% | 93.0% | **63.5%** | +-29.5% |
-| **Escalation Precision** | 10.0% | 63.6% | **20.9%** | +-42.8% |
-| **Escalation Recall** | **100.0%** | 70.0% | **95.0%** | +25.0% |
-| **Escalation F1 Score** | 18.2% | 66.7% | **34.2%** | +-32.4% |
-| **Average Latency per Item** | < 0.01 ms | 0.137 ms | 6.836 ms | Retained sub-millisecond execution |
+| **Intent Classification Accuracy** | 3.5% | 44.0% | **51.5%** | +7.5% |
+| **Escalation Routing Accuracy** | 10.0% | 93.0% | **83.5%** | +-9.5% |
+| **Escalation Precision** | 10.0% | 63.6% | **36.7%** | +-26.9% |
+| **Escalation Recall** | **100.0%** | 70.0% | **90.0%** | +20.0% |
+| **Escalation F1 Score** | 18.2% | 66.7% | **52.2%** | +-14.5% |
+| **Average Latency per Item** | < 0.01 ms | 0.323 ms | 62.664 ms | Retained sub-millisecond execution |
 
 ---
 
@@ -24,12 +24,12 @@
 ### 2.1 Random Held-Out Pool (150 Records)
 - **Baseline 0:** Intent Accuracy = 4.0%, Escalation Accuracy = 4.7%, Escalation F1 = 8.9%
 - **Baseline 1:** Intent Accuracy = 41.3%, Escalation Accuracy = 90.7%, Escalation F1 = 12.5%
-- **Main Agent:** Intent Accuracy = **42.0%**, Escalation Accuracy = **61.3%**, Escalation F1 = **17.1%**
+- **Main Agent:** Intent Accuracy = **49.3%**, Escalation Accuracy = **84.0%**, Escalation F1 = **29.4%**
 
 ### 2.2 Challenge Pool (50 Records)
 - **Baseline 0:** Intent Accuracy = 2.0%, Escalation Accuracy = 26.0%, Escalation F1 = 41.3%
 - **Baseline 1:** Intent Accuracy = 52.0%, Escalation Accuracy = 100.0%, Escalation F1 = 100.0%
-- **Main Agent:** Intent Accuracy = **52.0%**, Escalation Accuracy = **70.0%**, Escalation F1 = **63.4%**
+- **Main Agent:** Intent Accuracy = **58.0%**, Escalation Accuracy = **82.0%**, Escalation F1 = **74.3%**
 
 ---
 

@@ -1,14 +1,17 @@
 """
 LLM-Based Rubric Judge (llm_judge.py)
-Version: 1.0
+Version: 2.0
 Frozen rubric: results/phase6/judge_rubric.md
-Frozen prompt: prompts/llm_judge_prompt.txt
+Prompt v1 (frozen): prompts/llm_judge_prompt.txt
+Prompt v2 (few-shot calibrated): prompts/llm_judge_prompt_v2.txt
 
 Design principles:
   - Every LLM call is cached with full provenance metadata.
   - Cache entries are invalidated when reply, evidence, rubric, model, or prompt change.
   - On LLM failure: record the failure, report coverage gap — NEVER silently substitute heuristic scores.
   - Heuristic judge (judge.py) remains a completely separate, labeled baseline.
+  - v2.0 uses few-shot calibration examples per dimension to improve human-judge κ.
+    v1 cache entries are preserved (different cache key due to different prompt SHA-256).
 """
 
 import hashlib
@@ -20,14 +23,46 @@ from typing import Any, Dict, List, Optional, Tuple
 
 ROOT = Path(__file__).parent
 RUBRIC_PATH = ROOT / "results" / "phase6" / "judge_rubric.md"
-PROMPT_PATH = ROOT / "prompts" / "llm_judge_prompt.txt"
+PROMPT_PATH_V1 = ROOT / "prompts" / "llm_judge_prompt.txt"
+PROMPT_PATH_V2 = ROOT / "prompts" / "llm_judge_prompt_v2.txt"
+PROMPT_PATH = PROMPT_PATH_V2   # default to v2 for new runs
 CACHE_PATH = ROOT / "results" / "phase6" / "llm_judge_cache.jsonl"
 
-PROMPT_VERSION = "v1.0"
-MODEL_DEFAULT = "compound"
-PROVIDER_DEFAULT = "groq"
+PROMPT_VERSION = "v2.0"   # updated; v1.0 cache preserved via different SHA-256 key
 TEMPERATURE = 0.0
 MAX_TOKENS = 1024
+
+
+def _defaults_from_settings():
+    """Read provider/model defaults from settings (respects .env)."""
+    try:
+        from configs.settings import settings
+        provider = settings.llm_provider or "groq"
+        model = getattr(settings, "llm_judge_model", None) or settings.llm_model or "compound"
+        return provider, model
+    except Exception:
+        return "groq", "compound"
+
+
+_PROVIDER_DEFAULT, _MODEL_DEFAULT = _defaults_from_settings()
+MODEL_DEFAULT = _MODEL_DEFAULT
+PROVIDER_DEFAULT = _PROVIDER_DEFAULT
+
+
+def _parse_retry_delay(error_str: str, default: float = 10.0) -> float:
+    """Extract retryDelay seconds from Groq, Gemini, or OpenAI 429 error response."""
+    err = str(error_str)
+    # Groq format: "Please try again in 4m3.21s" or "try again in 3.75s"
+    groq_match = re.search(r"try again in\s+(?:(\d+)m)?(\d+(?:\.\d+)?)s", err, re.IGNORECASE)
+    if groq_match:
+        mins = float(groq_match.group(1)) if groq_match.group(1) else 0.0
+        secs = float(groq_match.group(2))
+        return mins * 60.0 + secs + 2.0
+    # Gemini format: retryDelay: 60s
+    match = re.search(r'retryDelay[^:]*:[^0-9]*([0-9]+)s', err)
+    if match:
+        return float(match.group(1)) + 1.0
+    return default
 
 
 def _sha256(text: str) -> str:
@@ -150,6 +185,7 @@ class LLMRubricJudge:
         provider: Optional[str] = None,
         model: Optional[str] = None,
         cache_path: Optional[Path] = None,
+        use_v2_prompt: bool = True,   # ← v2 (few-shot calibrated) by default
     ):
         from configs.settings import settings
         self.provider = provider or settings.llm_provider
@@ -157,14 +193,19 @@ class LLMRubricJudge:
         self.model_id = f"{self.provider}/{self.model}"
         self.cache_path = cache_path or CACHE_PATH
 
+        # Select prompt version
+        self.use_v2_prompt = use_v2_prompt
+        active_prompt_path = PROMPT_PATH_V2 if use_v2_prompt else PROMPT_PATH_V1
+        self.PROMPT_VERSION = "v2.0" if use_v2_prompt else "v1.0"
+
         # Load frozen artifacts and compute hashes
         if not RUBRIC_PATH.exists():
             raise FileNotFoundError(f"Rubric not found: {RUBRIC_PATH}")
-        if not PROMPT_PATH.exists():
-            raise FileNotFoundError(f"Prompt template not found: {PROMPT_PATH}")
+        if not active_prompt_path.exists():
+            raise FileNotFoundError(f"Prompt template not found: {active_prompt_path}")
 
         self.rubric_text = _load_text(RUBRIC_PATH)
-        self.prompt_template = _load_text(PROMPT_PATH)
+        self.prompt_template = _load_text(active_prompt_path)
         self.rubric_sha256 = _sha256(self.rubric_text)
         self.prompt_sha256 = _sha256(self.prompt_template)
 
@@ -267,14 +308,25 @@ class LLMRubricJudge:
             try:
                 raw_response = client.generate_reply(prompt=prompt_text, temperature=TEMPERATURE)
                 call_error = None
-                time.sleep(2.0)  # Pace calls at 2s to stay within 30k TPM rate limit
+                time.sleep(0.5)  # Brief pacing sleep
                 break
             except Exception as exc:
+                exc_str = str(exc)
                 call_error = f"LLM API call failed: {exc}"
-                if "rate_limit" in str(exc).lower() or "429" in str(exc):
-                    time.sleep(8.0 * (attempt + 1))
+                is_rate_limit = (
+                    "rate_limit" in exc_str.lower()
+                    or "429" in exc_str
+                    or "resource_exhausted" in exc_str.lower()
+                    or "quota" in exc_str.lower()
+                )
+                if is_rate_limit:
+                    # Honour retryDelay from Groq / Gemini error response
+                    delay = _parse_retry_delay(exc_str, default=15.0)
+                    delay = max(delay, 3.0)
+                    print(f"  [RATE LIMIT: {exc_str[:120]}] attempt {attempt+1}/5 — waiting {delay:.1f}s...", flush=True)
+                    time.sleep(delay)
                 else:
-                    time.sleep(2.0)
+                    time.sleep(3.0 * (attempt + 1))
 
         if raw_response is not None:
             parsed, parse_error = _parse_llm_response(raw_response)
