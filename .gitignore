@@ -45,3 +45,12 @@ results/debug/
 *.swp
 .DS_Store
 Thumbs.db
+~$*.xlsx
+~$*.xls
+
+# Trained Model Checkpoints & Large Binaries (>100MB)
+models/
+*.pt
+*.pth
+*.bin
+*.safetensors
